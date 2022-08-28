@@ -11,13 +11,9 @@ import Menu from "../organisms/Menu";
 import Welcome from "../organisms/Welcome";
 import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
-import TableCellNoneBorderBottom from "../molecules/TableCellNoneBorderBottom";
-import TableContainer from "../atoms/TablContainer";
-import Paper from "../atoms/Paper";
 import WatchOurVideo from "../organisms/WatchOurVideo";
 import Container from "../atoms/Container";
 import TableCell from "../atoms/TableCell";
-import { IMAGE_BACKGROUND_TAKEORDERS } from "../../constants";
 
 const TemplateEmail = ({
   header,
@@ -30,19 +26,32 @@ const TemplateEmail = ({
   says,
   footer,
 }) => {
-  const content = [welcome, services, watchOurVideo, menu, blog, says];
+  const content = [
+    header,
+    takeOrders,
+    welcome,
+    services,
+    watchOurVideo,
+    menu,
+    blog,
+    says,
+  ];
 
   return (
     <Container maxWidth="sm">
       <Table>
         <TableBody>
           <TableRow>
-            <TableCellNoneBorderBottom align="center">
+            {/* <TableCellNoneBorderBottom align="center">
               {header}
-            </TableCellNoneBorderBottom>
+            </TableCellNoneBorderBottom> */}
+            {content.map((value, index) => {
+              const key = index;
+              return <TableRow key={key}>{value}</TableRow>;
+            })}
           </TableRow>
-          <TableRow>
-            <TableCellNoneBorderBottom align="center" padding="none">
+          {/* <TableRow>
+            <TableCellNoneBorderBottom align="center">
               <Table>
                 <TableBody>
                   <TableRow>
@@ -62,9 +71,9 @@ const TemplateEmail = ({
                 </TableBody>
               </Table>
             </TableCellNoneBorderBottom>
-          </TableRow>
-          <TableRow>
-            <TableCellNoneBorderBottom padding="none" align="center">
+          </TableRow> */}
+          {/* <TableRow>
+            <TableCellNoneBorderBottom align="center">
               <Table>
                 <TableBody>
                   {content.map((value, index) => {
@@ -84,7 +93,7 @@ const TemplateEmail = ({
                 </TableBody>
               </Table>
             </TableCellNoneBorderBottom>
-          </TableRow>
+          </TableRow> */}
         </TableBody>
       </Table>
       <Table>{footer}</Table>

@@ -3,7 +3,7 @@ import Section from "../../molecules/Section";
 import Table from "../../molecules/TableSynthetic";
 import TableBody from "../../atoms/TableBody";
 import TableCell from "../../atoms/TableCell";
-import TableCellNoneBorderBottom from "../../molecules/TableCellNoneBorderBottom";
+import TableCellNoneBorderBottom from "../../molecules/TableCellTyles";
 import Typography from "../../atoms/Typography";
 import TableRow from "../../atoms/TableRow";
 import Box from "../../atoms/Box";

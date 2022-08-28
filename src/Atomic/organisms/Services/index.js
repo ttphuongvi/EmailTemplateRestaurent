@@ -5,7 +5,7 @@ import TableBody from "../../atoms/TableBody";
 import TableCell from "../../atoms/TableCell";
 import TableRow from "../../atoms/TableRow";
 import Typography from "../../atoms/Typography";
-import TableCellNoneBorderBottom from "../../molecules/TableCellNoneBorderBottom";
+import TableCellNoneBorderBottom from "../../molecules/TableCellTyles";
 import TableContentServices from "../../molecules/TableContentServices";
 import {
   IMAGE_SERVICES_HEALTHY_FOOD,
