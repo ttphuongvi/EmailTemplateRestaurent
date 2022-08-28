@@ -1,7 +1,8 @@
 import React from "react";
-import Box from "../../atoms/Box";
+import StyledBox from "../../molecules/StyledBox";
+
 
 const Services = () => {
-  return <Box sx={{}}>Services</Box>;
+  return <StyledBox>Services</StyledBox>;
 };
 export default Services;

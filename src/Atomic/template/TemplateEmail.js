@@ -8,28 +8,33 @@ import Blog from "../organisms/Blog";
 import Services from "../organisms/Services";
 import TakeOrders from "../organisms/TakeOrders";
 import Menu from "../organisms/Menu";
-import WelcomToRestoBar from "../organisms/WelcomToRestoBar";
+import Welcome from "../organisms/Welcome";
 import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
 import TableCellNoneBorderBottom from "../molecules/TableCellNoneBorderBottom";
+import TableContainer from "../atoms/TablContainer";
+import Paper from '../atoms/Paper';
+import WatchOurVideo from "../organisms/WatchOurVideo";
 
-const TemplateEmail = ({ header, footer }) => {
+const TemplateEmail = ({ header,takeOrders, welcome, services, watchOurVideo, menu, blog, says, footer }) => {
   const content = [
-    <TakeOrders />,
-    <WelcomToRestoBar />,
-    <Services />,
-    <Menu />,
-    <Blog />,
-    <Says />,
-    <Footer />
+    takeOrders,
+    welcome,
+    services,
+    watchOurVideo,
+    menu,
+    blog,
+   says,
+    footer,
   ];
 
   return (
+    <TableContainer component={Paper} elevation={0}>
     <Table>
       <TableHead>
         <TableRow>
-          <TableCellNoneBorderBottom align="center" variant="head">
-            <Header />
+          <TableCellNoneBorderBottom align="center" variant="head">       
+            {header}
           </TableCellNoneBorderBottom>
         </TableRow>
       </TableHead>
@@ -50,7 +55,21 @@ const TemplateEmail = ({ header, footer }) => {
         })}
       </TableBody>
     </Table>
+    </TableContainer>
   );
 };
+
+
+TemplateEmail.defaultProps ={
+  header: <Header/>,
+  takeOrders: <TakeOrders/>,
+  welcome: <Welcome/>,
+  services: <Services/>,
+  watchOurVideo: <WatchOurVideo/>,
+  menu: <Menu/>,
+  blog:<Blog/>,
+  says: <Says/>,
+  footer: <Footer/>
+}
 
 export default TemplateEmail;
