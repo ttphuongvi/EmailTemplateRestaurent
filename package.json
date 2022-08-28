@@ -18,5 +18,8 @@
     "start": "react-scripts start"
   },
   "keywords": [],
-  "name": "template-email-restaurant"
+  "name": "template-email-restaurant",
+  "browserslist":  [
+    "defaults"
+  ]
 }

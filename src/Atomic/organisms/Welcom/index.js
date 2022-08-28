@@ -2,15 +2,17 @@ import React from "react";
 import Box from "../../atoms/Box";
 import Typography from "../../atoms/Typography";
 import Stack from "../../atoms/Stack";
+import StyledBox from "../../molecules/StyledBox";
 
-const WelcomToRestoBar = () => {
+const Welcom = () => {
   return (
-    <Box sx={{ backgroundColor: "rgba(0,0,0,.8)", width: "100%" }}>
+    <StyledBox sx={{ backgroundColor: "rgba(0,0,0,.8)" }}>
       <Stack justifyContent="center" alignItems="center" spacing={1}>
         <Typography
           sx={(theme) => ({
             textTransform: "uppercase",
-            color: theme.palette.text.darkTitle,
+            color: theme.palette.text.darkBody,
+            paddingBottom: theme.spacing(1),
             borderBottom: `2px solid ${theme.palette.primary.main}`
           })}
         >
@@ -22,8 +24,17 @@ const WelcomToRestoBar = () => {
         >
           Welcome To RestoBar
         </Typography>
+        <Typography
+              sx={(theme) => ({
+                color: theme.palette.text.darkBody
+              })}
+            >
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </Typography>
       </Stack>
-    </Box>
+    </StyledBox>
   );
 };
-export default WelcomToRestoBar;
+export default Welcom;

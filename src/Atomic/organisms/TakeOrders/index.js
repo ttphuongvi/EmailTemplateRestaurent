@@ -4,6 +4,7 @@ import { IMAGE_BACKGROUND_TAKEORDERS } from "../../../constants";
 import Typography from "../../atoms/Typography";
 import Stack from "../../atoms/Stack";
 import Button from "../../molecules/Button";
+import StyledBox from "../../molecules/StyledBox";
 
 const TakeOrders = () => {
   return (
@@ -19,7 +20,7 @@ const TakeOrders = () => {
           height: "400px"
         }}
       >
-        <Box sx={(theme) => ({ padding: theme.spacing(0, 5) })}>
+        <StyledBox>
           <Stack
             spacing={1}
             justifyContent="center"
@@ -47,7 +48,7 @@ const TakeOrders = () => {
             </Typography>
             <Button>Get Your Order Here!</Button>
           </Stack>
-        </Box>
+        </StyledBox>
       </Box>
       {/* <Image ratio={4 / 3} src={IMAGE_BACKGROUND_TAKEORDERS} /> */}
 
