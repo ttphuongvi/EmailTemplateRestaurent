@@ -14,7 +14,7 @@ const TableContentServices = ({ image, subTitle, content }) => {
     <Table>
       <TableBody>
         <TableRow>
-          <TableCellNoneBorderBottom align="center">
+          <TableCellNoneBorderBottom align="center" padding="none">
             <Box
               alt=""
               component="img"
@@ -24,8 +24,8 @@ const TableContentServices = ({ image, subTitle, content }) => {
           </TableCellNoneBorderBottom>
         </TableRow>
         <TableRow>
-          <TableCellNoneBorderBottom align="center">
-            <Stack>
+          <TableCellNoneBorderBottom align="center" padding="none">
+            <Stack spacing={1}>
               <Typography variant="subTitle">{subTitle}</Typography>
               <Typography
                 variant="content"
