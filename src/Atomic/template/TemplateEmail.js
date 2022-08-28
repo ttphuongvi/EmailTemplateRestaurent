@@ -30,48 +30,24 @@ const TemplateEmail = ({
   says,
   footer,
 }) => {
-  const content = [
-    header,
-    takeOrders,
-    welcome,
-    services,
-    watchOurVideo,
-    menu,
-    blog,
-    says,
-  ];
+  const content = [welcome, services, watchOurVideo, menu, blog, says];
 
   return (
     <Container maxWidth="sm">
       <Table>
         <TableBody>
-          {/* {content.map((value, index) => {
-            const key = index;
-            return (
-              <TableRow key={key}>
-                <TableCellNoneBorderBottom
-                  padding="none"
-                  align="center"
-                  variant="body"
-                >
-                  {value}
-                </TableCellNoneBorderBottom>
-              </TableRow>
-            );
-          })} */}
           <TableRow>
             <TableCellNoneBorderBottom align="center">
               {header}
             </TableCellNoneBorderBottom>
           </TableRow>
           <TableRow>
-            <TableCellNoneBorderBottom align="center">
+            <TableCellNoneBorderBottom align="center" padding="none">
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableCell
+                    <TableCellNoneBorderBottom
                       align="center"
-                      padding="none"
                       sx={{
                         backgroundImage: `url(${IMAGE_BACKGROUND_TAKEORDERS})`,
                         backgroundRepeat: "no-repeat",
@@ -81,8 +57,30 @@ const TemplateEmail = ({
                       }}
                     >
                       {takeOrders}
-                    </TableCell>
+                    </TableCellNoneBorderBottom>
                   </TableRow>
+                </TableBody>
+              </Table>
+            </TableCellNoneBorderBottom>
+          </TableRow>
+          <TableRow>
+            <TableCellNoneBorderBottom padding="none" align="center">
+              <Table>
+                <TableBody>
+                  {content.map((value, index) => {
+                    const key = index;
+                    return (
+                      <TableRow key={key}>
+                        <TableCellNoneBorderBottom
+                          padding="none"
+                          align="center"
+                          variant="body"
+                        >
+                          {value}
+                        </TableCellNoneBorderBottom>
+                      </TableRow>
+                    );
+                  })}
                 </TableBody>
               </Table>
             </TableCellNoneBorderBottom>

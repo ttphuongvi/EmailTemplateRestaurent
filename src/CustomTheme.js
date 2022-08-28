@@ -21,6 +21,8 @@ const customTheme = createTheme({
       darkContent: "rgba(255,255,255,.8)",
       lightSubtitle: "rgba(0,0,0)",
       darkSubtitle: "rgba(255,255,255)",
+      lightCaption: "rgba(0,0,0,.4)",
+      darkCaption: "rgba(255,255,255,.4)",
     },
     background: {
       black: "rgba(0,0,0,.8)",
@@ -40,12 +42,13 @@ const customTheme = createTheme({
       fontFamily: "'Playfair Display', serif",
       fontSize: "28px",
       fontWeight: 700,
+      lineHeight: 1.4,
     },
 
     content: {
       fontFamily: "'Montserrat', sans-serif",
       fontWeight: 400,
-      fontSize: "12px",
+      fontSize: "15px",
       lineHeight: 1.8,
     },
   },

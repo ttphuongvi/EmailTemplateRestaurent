@@ -1,8 +1,11 @@
 import React from "react";
-import StyledBox from "../../molecules/StyledBox";
-
+import Section from "../../molecules/Section";
 
 const Services = () => {
-  return <StyledBox>Services</StyledBox>;
+  return (
+    <>
+      <Section content={"Services"}></Section>
+    </>
+  );
 };
 export default Services;
