@@ -18,10 +18,10 @@ const Welcome = () => {
             Welcom
           </Typography>
         }
-        subtitle={
+        title={
           <Typography
-            variant="subtitle"
-            sx={(theme) => ({ color: theme.palette.text.darkSubtitle })}
+            variant="title"
+            sx={(theme) => ({ color: theme.palette.text.darktitle })}
           >
             Welcome To RestoBar
           </Typography>

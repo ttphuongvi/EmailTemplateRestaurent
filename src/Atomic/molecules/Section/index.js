@@ -2,14 +2,13 @@ import React from "react";
 import Stack from "../../atoms/Stack";
 import Typography from "../../atoms/Typography";
 import PropTypes from "prop-types";
-import Box from "../../atoms/Box";
 
-const Section = ({ caption, subtitle, content }) => {
+const Section = ({ caption, title, content }) => {
   return (
     <Stack justifyContent="center" alignItems="center" spacing={1} padding={5}>
       {caption}
 
-      {subtitle}
+      {title}
 
       {content}
     </Stack>
@@ -18,7 +17,7 @@ const Section = ({ caption, subtitle, content }) => {
 
 Section.prototype = {
   caption: PropTypes.node,
-  subtitle: PropTypes.node,
+  title: PropTypes.node,
   content: PropTypes.node,
 };
 

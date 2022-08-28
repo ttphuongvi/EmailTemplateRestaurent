@@ -15,10 +15,10 @@ const TakeOrders = () => {
         <TableRow>
           <TableCellNoneBorderBottom padding="none" align="center">
             <Section
-              subtitle={
+              title={
                 <Typography
-                  variant="subtitle"
-                  sx={(theme) => ({ color: theme.palette.text.darkSubtitle })}
+                  variant="title"
+                  sx={(theme) => ({ color: theme.palette.text.darktitle })}
                 >
                   We Serve Healthy & Delicious Foods
                 </Typography>
@@ -44,9 +44,9 @@ const TakeOrders = () => {
         </TableRow>
         {/* <Stack spacing={1} justifyContent="center" alignItems="center">
           <Typography
-            variant="subtitle"
+            variant="title"
             sx={(theme) => ({
-              color: theme.palette.text.darkSubtitle,
+              color: theme.palette.text.darktitle,
             })}
           >
             We Serve Healthy & Delicious Foods
@@ -56,8 +56,8 @@ const TakeOrders = () => {
 
         {/* <Section
           backgroundColor="theme.palette.background.black"
-          color="darkSubtitle"
-          subtitle="We Serve Healthy & Delicious Foods"
+          color="darktitle"
+          title="We Serve Healthy & Delicious Foods"
         ></Section> */}
 
         {/* <Image ratio={4 / 3} src={IMAGE_BACKGROUND_TAKEORDERS} /> */}

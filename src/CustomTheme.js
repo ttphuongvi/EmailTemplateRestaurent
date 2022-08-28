@@ -19,8 +19,8 @@ const customTheme = createTheme({
     text: {
       lightContent: "rgba(0,0,0,.4)",
       darkContent: "rgba(255,255,255,.8)",
-      lightSubtitle: "rgba(0,0,0)",
-      darkSubtitle: "rgba(255,255,255)",
+      lighttitle: "rgba(0,0,0)",
+      darktitle: "rgba(255,255,255)",
       lightCaption: "rgba(0,0,0,.4)",
       darkCaption: "rgba(255,255,255,.4)",
     },
@@ -38,11 +38,16 @@ const customTheme = createTheme({
       paddingBottom: "8px",
       borderBottom: `2px solid ${amber[800]}`,
     },
-    subtitle: {
+    title: {
       fontFamily: "'Playfair Display', serif",
       fontSize: "28px",
       fontWeight: 700,
       lineHeight: 1.4,
+    },
+    subTitle: {
+      fontFamily: "'Playfair Display', serif",
+      fontSize: "20px",
+      fontWeight: 700,
     },
 
     content: {
