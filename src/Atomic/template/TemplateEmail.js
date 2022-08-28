@@ -13,63 +13,97 @@ import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
 import TableCellNoneBorderBottom from "../molecules/TableCellNoneBorderBottom";
 import TableContainer from "../atoms/TablContainer";
-import Paper from '../atoms/Paper';
+import Paper from "../atoms/Paper";
 import WatchOurVideo from "../organisms/WatchOurVideo";
+import Container from "../atoms/Container";
+import TableCell from "../atoms/TableCell";
+import { IMAGE_BACKGROUND_TAKEORDERS } from "../../constants";
 
-const TemplateEmail = ({ header,takeOrders, welcome, services, watchOurVideo, menu, blog, says, footer }) => {
+const TemplateEmail = ({
+  header,
+  takeOrders,
+  welcome,
+  services,
+  watchOurVideo,
+  menu,
+  blog,
+  says,
+  footer,
+}) => {
   const content = [
+    header,
     takeOrders,
     welcome,
     services,
     watchOurVideo,
     menu,
     blog,
-   says,
-    footer,
+    says,
   ];
 
   return (
-    <TableContainer component={Paper} elevation={0}>
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCellNoneBorderBottom align="center" variant="head">       
-            {header}
-          </TableCellNoneBorderBottom>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {content.map((value, index) => {
-          const key = index;
-          return (
-            <TableRow key={key}>
-              <TableCellNoneBorderBottom
-                padding="none"
-                align="center"
-                variant="body"
-              >
-                {value}
-              </TableCellNoneBorderBottom>
-            </TableRow>
-          );
-        })}
-      </TableBody>
-    </Table>
-    </TableContainer>
+    <Container maxWidth="sm">
+      <Table>
+        <TableBody>
+          {/* {content.map((value, index) => {
+            const key = index;
+            return (
+              <TableRow key={key}>
+                <TableCellNoneBorderBottom
+                  padding="none"
+                  align="center"
+                  variant="body"
+                >
+                  {value}
+                </TableCellNoneBorderBottom>
+              </TableRow>
+            );
+          })} */}
+          <TableRow>
+            <TableCellNoneBorderBottom align="center">
+              {header}
+            </TableCellNoneBorderBottom>
+          </TableRow>
+          <TableRow>
+            <TableCellNoneBorderBottom align="center">
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <TableCell
+                      align="center"
+                      padding="none"
+                      sx={{
+                        backgroundImage: `url(${IMAGE_BACKGROUND_TAKEORDERS})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        width: "100%",
+                        height: "400px",
+                      }}
+                    >
+                      {takeOrders}
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableCellNoneBorderBottom>
+          </TableRow>
+        </TableBody>
+      </Table>
+      <Table>{footer}</Table>
+    </Container>
   );
 };
 
-
-TemplateEmail.defaultProps ={
-  header: <Header/>,
-  takeOrders: <TakeOrders/>,
-  welcome: <Welcome/>,
-  services: <Services/>,
-  watchOurVideo: <WatchOurVideo/>,
-  menu: <Menu/>,
-  blog:<Blog/>,
-  says: <Says/>,
-  footer: <Footer/>
-}
+TemplateEmail.defaultProps = {
+  header: <Header />,
+  takeOrders: <TakeOrders />,
+  welcome: <Welcome />,
+  services: <Services />,
+  watchOurVideo: <WatchOurVideo />,
+  menu: <Menu />,
+  blog: <Blog />,
+  says: <Says />,
+  footer: <Footer />,
+};
 
 export default TemplateEmail;

@@ -5,41 +5,49 @@ const customTheme = createTheme({
   palette: {
     primary: {
       main: amber[800],
-      light: "rgba(0,0,0,.4)",
-      dark: "rgba(255,255,255,.4)",
     },
     secondary: {
-      main: amber[500]
+      main: "#fff",
     },
+    lightCaption: {
+      main: "rgba(0,0,0)",
+    },
+    darkCaption: {
+      main: "rgba(255,255,255)",
+    },
+
     text: {
-      lightCaption: "rgba(0,0,0,.4)",
-      darkCaption: "rgba(255,255,255,.4)",
       lightContent: "rgba(0,0,0,.4)",
       darkContent: "rgba(255,255,255,.8)",
       lightSubtitle: "rgba(0,0,0)",
       darkSubtitle: "rgba(255,255,255)",
-     
-
-    }
+    },
+    background: {
+      black: "rgba(0,0,0,.8)",
+      white: "#fff",
+    },
   },
   typography: {
-    caption:{
+    caption: {
       fontFamily: "'Montserrat', sans-serif",
       fontSize: "13px",
       letterSpacing: "2px",
+      textTransform: "uppercase",
+      paddingBottom: "8px",
+      borderBottom: `2px solid ${amber[800]}`,
     },
     subtitle: {
       fontFamily: "'Playfair Display', serif",
       fontSize: "28px",
-      fontWeight: 700
+      fontWeight: 700,
     },
-   
+
     content: {
       fontFamily: "'Montserrat', sans-serif",
       fontWeight: 400,
       fontSize: "12px",
       lineHeight: 1.8,
-    }
-  }
+    },
+  },
 });
 export default customTheme;

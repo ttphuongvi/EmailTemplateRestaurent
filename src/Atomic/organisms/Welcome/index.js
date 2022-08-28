@@ -3,7 +3,7 @@ import Box from "../../atoms/Box";
 import Typography from "../../atoms/Typography";
 import Stack from "../../atoms/Stack";
 import Section from "../../molecules/Section";
-
+import StyledBox from "../../molecules/StyledBox";
 
 const Welcome = () => {
   return (
@@ -36,11 +36,26 @@ const Welcome = () => {
     //         </Typography>
     //   </Stack>
     // </StyledBox>
-    <Section caption='Welcome' subtitle='Welcome To RestoBar' content={
-      <Typography  variant='content'>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</Typography>
-    }>
-
-    </Section>
+    <StyledBox
+      sx={(theme) => ({ backgroundColor: theme.palette.background.black })}
+    >
+      <Section
+        caption="Welcome"
+        subtitle="Welcome To RestoBar"
+        colorSubtitle="darkContent"
+        colorCaption="darkCaption"
+        content={
+          <Typography
+            variant="content"
+            sx={(theme) => ({ color: theme.palette.text.darkContent })}
+          >
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </Typography>
+        }
+      ></Section>
+    </StyledBox>
   );
 };
 export default Welcome;
