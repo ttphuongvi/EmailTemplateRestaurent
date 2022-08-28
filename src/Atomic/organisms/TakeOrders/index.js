@@ -7,6 +7,7 @@ import TableCellNoneBorderBottom from "../../molecules/TableCellNoneBorderBottom
 import TableRow from "../../atoms/TableRow";
 import Section from "../../molecules/Section";
 import Typography from "../../atoms/Typography";
+import TypographyDarkContent from "../../molecules/TypographyDarkContent";
 
 const TakeOrders = () => {
   return (
@@ -25,17 +26,12 @@ const TakeOrders = () => {
               }
               content={
                 <>
-                  <Typography
-                    variant="content"
-                    sx={(theme) => ({
-                      color: theme.palette.text.darkContent,
-                    })}
-                  >
+                  <TypographyDarkContent>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia. It is a paradisematic
                     country, in which roasted parts of sentences fly into your
                     mouth.
-                  </Typography>
+                  </TypographyDarkContent>
                   <Button>Get Your Order Here!</Button>
                 </>
               }

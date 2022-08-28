@@ -8,6 +8,7 @@ import TableRow from "../../atoms/TableRow";
 import Box from "../../atoms/Box";
 import PropTypes from "prop-types";
 import Stack from "../../atoms/Stack";
+import TypographyLightContent from "../TypographyLightContent";
 
 const TableContentServices = ({ image, subTitle, content }) => {
   return (
@@ -27,12 +28,7 @@ const TableContentServices = ({ image, subTitle, content }) => {
           <TableCellNoneBorderBottom align="center" padding="none">
             <Stack spacing={1}>
               <Typography variant="subTitle">{subTitle}</Typography>
-              <Typography
-                variant="content"
-                sx={(theme) => ({ color: theme.palette.text.lightContent })}
-              >
-                {content}
-              </Typography>
+              <TypographyLightContent>{content}</TypographyLightContent>
             </Stack>
           </TableCellNoneBorderBottom>
         </TableRow>

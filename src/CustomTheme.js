@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { amber } from "@mui/material/colors";
+import { amber, grey } from "@mui/material/colors";
 
 const customTheme = createTheme({
   palette: {
@@ -25,8 +25,8 @@ const customTheme = createTheme({
       darkCaption: "rgba(255,255,255,.4)",
     },
     background: {
-      black: "rgba(0,0,0,.8)",
-      white: "#fff",
+      dark: "rgba(0,0,0,.8)",
+      light: grey[50],
     },
   },
   typography: {

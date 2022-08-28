@@ -6,7 +6,7 @@ import Section from "../../molecules/Section";
 
 const Welcome = () => {
   return (
-    <Box sx={(theme) => ({ backgroundColor: theme.palette.background.black })}>
+    <Box sx={(theme) => ({ backgroundColor: theme.palette.background.dark })}>
       <Section
         caption={
           <Typography
