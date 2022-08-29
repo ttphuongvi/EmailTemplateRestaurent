@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const Section = ({ caption, title, content }) => {
   return (
-    <Stack justifyContent="center" alignItems="center" spacing={1} padding={5}>
+    <Stack justifyContent="center" alignItems="center" spacing={1}>
       {caption}
 
       {title}

@@ -7,7 +7,6 @@ const StyledHeader = styled(Typography)(({ theme }) => ({
   fontFamily: " 'Montserrat', sans-serif",
   fontWeight: theme.typography.fontWeightBold,
   fontSize: "20px",
-  padding: theme.spacing(2, 5),
 }));
 
 const Header = () => {

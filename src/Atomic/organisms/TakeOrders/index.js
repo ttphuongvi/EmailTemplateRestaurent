@@ -9,10 +9,13 @@ import Typography from "../../atoms/Typography";
 import TypographyDarkContent from "../../molecules/TypographyDarkContent";
 import { IMAGE_BACKGROUND_TAKEORDERS } from "../../../constants";
 import TableCellStyles from "../../molecules/TableCellTyles";
+import TableCell from "../../atoms/TableCell";
+import TableCellNoneBorderBottom from "../../molecules/TableCellNoneBorderBottom";
 
 const TakeOrders = () => {
   return (
-    <TableCellStyles
+    <TableCellNoneBorderBottom
+      padding="none"
       sx={{
         backgroundImage: `url(${IMAGE_BACKGROUND_TAKEORDERS})`,
         backgroundRepeat: "no-repeat",
@@ -24,7 +27,7 @@ const TakeOrders = () => {
       <Table>
         <TableBody>
           <TableRow>
-            <TableCellStyles align="center">
+            <TableCellStyles align="center" padding="none">
               <Section
                 title={
                   <Typography
@@ -71,7 +74,7 @@ const TakeOrders = () => {
           {/* <Box>aaa</Box> */}
         </TableBody>
       </Table>
-    </TableCellStyles>
+    </TableCellNoneBorderBottom>
   );
 };
 export default TakeOrders;

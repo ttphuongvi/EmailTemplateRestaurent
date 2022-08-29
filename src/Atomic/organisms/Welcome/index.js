@@ -3,10 +3,14 @@ import Box from "../../atoms/Box";
 import Typography from "../../atoms/Typography";
 import Stack from "../../atoms/Stack";
 import Section from "../../molecules/Section";
+import TableCellStyles from "../../molecules/TableCellTyles";
 
 const Welcome = () => {
   return (
-    <Box sx={(theme) => ({ backgroundColor: theme.palette.background.dark })}>
+    <TableCellStyles
+      align="center"
+      sx={(theme) => ({ backgroundColor: theme.palette.background.dark })}
+    >
       <Section
         caption={
           <Typography
@@ -37,7 +41,7 @@ const Welcome = () => {
           </Typography>
         }
       ></Section>
-    </Box>
+    </TableCellStyles>
   );
 };
 export default Welcome;

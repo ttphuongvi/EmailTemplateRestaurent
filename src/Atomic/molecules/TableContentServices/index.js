@@ -2,7 +2,7 @@ import React from "react";
 import Table from "../../atoms/Table";
 import TableBody from "../../atoms/TableBody";
 import TableCell from "../../atoms/TableCell";
-import TableCellNoneBorderBottom from "../TableCellTyles";
+import TableCellNoneBorderBottom from "../TableCellNoneBorderBottom";
 import Typography from "../../atoms/Typography";
 import TableRow from "../../atoms/TableRow";
 import Box from "../../atoms/Box";
@@ -15,7 +15,13 @@ const TableContentServices = ({ image, subTitle, content }) => {
     <Table>
       <TableBody>
         <TableRow>
-          <TableCellNoneBorderBottom align="center" padding="none">
+          <TableCellNoneBorderBottom
+            sx={(theme) => ({
+              paddingTop: theme.spacing(3),
+            })}
+            align="center"
+            padding="none"
+          >
             <Box
               alt=""
               component="img"
@@ -25,7 +31,10 @@ const TableContentServices = ({ image, subTitle, content }) => {
           </TableCellNoneBorderBottom>
         </TableRow>
         <TableRow>
-          <TableCellNoneBorderBottom align="center" padding="none">
+          <TableCellNoneBorderBottom
+            align="center"
+            // padding="none"
+          >
             <Stack spacing={1}>
               <Typography variant="subTitle">{subTitle}</Typography>
               <TypographyLightContent>{content}</TypographyLightContent>
