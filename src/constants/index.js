@@ -23,3 +23,7 @@ export const IMAGE_DINNER =
   "https://colorlib.com/etc/email-template/1/images/bg_6.jpg";
 export const IMAGE_DESSERT =
   "https://colorlib.com/etc/email-template/1/images/bg_5.jpg";
+export const IMAGE_BLOG_1 =
+  "https://colorlib.com/etc/email-template/1/images/blog-1.jpg";
+export const IMAGE_BLOG_2 =
+  "https://colorlib.com/etc/email-template/1/images/blog-2.jpg";
