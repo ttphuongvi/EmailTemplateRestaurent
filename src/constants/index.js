@@ -19,3 +19,5 @@ export const IMAGE_BREAKFAST =
   "https://colorlib.com/etc/email-template/1/images/bg_3.jpg";
 export const IMAGE_LUNCH =
   "https://colorlib.com/etc/email-template/1/images/bg_4.jpg";
+export const IMAGE_DINNER =
+  "https://colorlib.com/etc/email-template/1/images/bg_6.jpg";
