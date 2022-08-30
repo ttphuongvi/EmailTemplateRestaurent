@@ -14,6 +14,7 @@ import TableSynthetic from "../molecules/TableSynthetic";
 import { Table } from "@mui/material";
 import Dinner from "../organisms/Dinner";
 import Dessert from "../organisms/Dessert";
+import Count from "../organisms/Count";
 
 const TemplateEmail = ({
   header,
@@ -26,6 +27,7 @@ const TemplateEmail = ({
   lunch,
   dinner,
   dessert,
+  count,
   blog,
   says,
   footer,
@@ -39,6 +41,7 @@ const TemplateEmail = ({
     lunch,
     dinner,
     dessert,
+    count,
     blog,
     says,
   ];
@@ -83,6 +86,7 @@ TemplateEmail.defaultProps = {
   lunch: <Lunch />,
   dinner: <Dinner />,
   dessert: <Dessert />,
+  count: <Count />,
   blog: <Blog />,
   says: <Says />,
   footer: <Footer />,

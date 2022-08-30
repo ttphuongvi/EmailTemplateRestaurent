@@ -3,7 +3,7 @@ import TableSynthetic from "../TableSynthetic";
 import PropTypes from "prop-types";
 import { alpha, useTheme } from "@mui/material/styles";
 
-const TableBlog = ({ number, name }) => {
+const TableCount = ({ number, name }) => {
   const theme = useTheme();
   return (
     <TableSynthetic>
@@ -36,9 +36,9 @@ const TableBlog = ({ number, name }) => {
   );
 };
 
-TableBlog.prototype = {
+TableCount.prototype = {
   number: PropTypes.number,
   name: PropTypes.string,
 };
 
-export default TableBlog;
+export default TableCount;
