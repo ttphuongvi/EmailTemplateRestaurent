@@ -15,3 +15,5 @@ export const IMAGE_MENU_PASTA =
   "https://colorlib.com/etc/email-template/1/images/menu-1.jpg";
 export const IMAGE_MENU_SWEETENED =
   "https://colorlib.com/etc/email-template/1/images/menu-2.jpg";
+export const IMAGE_BREAKFAST =
+  "https://colorlib.com/etc/email-template/1/images/bg_3.jpg";

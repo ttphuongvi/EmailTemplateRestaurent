@@ -35,8 +35,8 @@ const customTheme = createTheme({
       fontSize: "13px",
       letterSpacing: "2px",
       textTransform: "uppercase",
-      paddingBottom: "8px",
-      borderBottom: `2px solid ${yellow[800]}`,
+      paddingBottom: "12px",
+      borderBottom: `3px solid ${yellow[800]}`,
     },
     subtitle1: {
       fontFamily: "'Playfair Display', serif",

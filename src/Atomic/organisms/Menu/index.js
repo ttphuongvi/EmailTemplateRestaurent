@@ -11,7 +11,7 @@ import { IMAGE_MENU_PASTA, IMAGE_MENU_SWEETENED } from "../../../constants";
 const Menu = () => {
   const theme = useTheme();
   return (
-    <td style={{ padding: theme.spacing(5) }}>
+    <td align="center" style={{ padding: theme.spacing(5) }}>
       <HeadingSection
         caption={<CaptionLight>MENU</CaptionLight>}
         title={<TitleLight>Our Delicious Food</TitleLight>}

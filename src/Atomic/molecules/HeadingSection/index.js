@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const HeadingSection = ({ caption, title, content }) => {
   return (
-    <div align="center">
+    <div>
       {caption}
 
       {title}

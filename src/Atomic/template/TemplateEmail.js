@@ -8,6 +8,7 @@ import Welcome from "../organisms/Welcome";
 import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
 import WatchOurVideo from "../organisms/WatchOurVideo";
+import Breakfast from "../organisms/Breakfast";
 
 const TemplateEmail = ({
   header,
@@ -16,11 +17,20 @@ const TemplateEmail = ({
   services,
   watchOurVideo,
   menu,
+  breakfast,
   blog,
   says,
   footer,
 }) => {
-  const content = [welcome, services, watchOurVideo, menu, blog, says];
+  const content = [
+    welcome,
+    services,
+    watchOurVideo,
+    menu,
+    breakfast,
+    blog,
+    says,
+  ];
 
   return (
     <div
@@ -64,6 +74,7 @@ TemplateEmail.defaultProps = {
   services: <Services />,
   watchOurVideo: <WatchOurVideo />,
   menu: <Menu />,
+  breakfast: <Breakfast />,
   blog: <Blog />,
   says: <Says />,
   footer: <Footer />,
