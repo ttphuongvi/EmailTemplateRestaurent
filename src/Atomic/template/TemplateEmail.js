@@ -13,6 +13,7 @@ import Lunch from "../organisms/Lunch";
 import TableSynthetic from "../molecules/TableSynthetic";
 import { Table } from "@mui/material";
 import Dinner from "../organisms/Dinner";
+import Dessert from "../organisms/Dessert";
 
 const TemplateEmail = ({
   header,
@@ -24,6 +25,7 @@ const TemplateEmail = ({
   breakfast,
   lunch,
   dinner,
+  dessert,
   blog,
   says,
   footer,
@@ -36,6 +38,7 @@ const TemplateEmail = ({
     breakfast,
     lunch,
     dinner,
+    dessert,
     blog,
     says,
   ];
@@ -79,6 +82,7 @@ TemplateEmail.defaultProps = {
   breakfast: <Breakfast />,
   lunch: <Lunch />,
   dinner: <Dinner />,
+  dessert: <Dessert />,
   blog: <Blog />,
   says: <Says />,
   footer: <Footer />,
