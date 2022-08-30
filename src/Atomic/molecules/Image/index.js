@@ -10,7 +10,7 @@ const ImageStyles = styled("img")({
   top: "0",
   left: "0",
   objectFit: "cover",
-  zIndex: -1
+  zIndex: -1,
 });
 
 const Image = (props) => {
@@ -20,9 +20,9 @@ const Image = (props) => {
   return (
     <Box
       component={"div"}
-      sx={{
+      style={{
         position: "relative",
-        paddingTop: `calc(${numberReal}%)`
+        paddingTop: `calc(${numberReal}%)`,
       }}
     >
       <ImageStyles alt="" src={props.src}></ImageStyles>

@@ -1,7 +1,6 @@
 import React from "react";
 import Table from "../../atoms/Table";
 import TableBody from "../../atoms/TableBody";
-import TableCell from "../../atoms/TableCell";
 import TableCellNoneBorderBottom from "../TableCellNoneBorderBottom";
 import Typography from "../../atoms/Typography";
 import TableRow from "../../atoms/TableRow";
@@ -9,6 +8,7 @@ import Box from "../../atoms/Box";
 import PropTypes from "prop-types";
 import Stack from "../../atoms/Stack";
 import TypographyLightContent from "../TypographyLightContent";
+import Image from "../../atoms/Image";
 
 const TableContentServices = ({ image, subTitle, content }) => {
   return (
@@ -22,12 +22,11 @@ const TableContentServices = ({ image, subTitle, content }) => {
             align="center"
             padding="none"
           >
-            <Box
+            <Image
               alt=""
-              component="img"
               src={image}
-              sx={{ width: "60px", maxWidth: "60px" }}
-            ></Box>
+              style={{ width: "60px", maxWidth: "60px" }}
+            ></Image>
           </TableCellNoneBorderBottom>
         </TableRow>
         <TableRow>

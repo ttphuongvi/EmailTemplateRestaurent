@@ -1,8 +1,4 @@
 import React from "react";
-import Table from "../atoms/Table";
-import TableHead from "../atoms/TableHead";
-import TableRow from "../atoms/TableRow";
-import TableBody from "../atoms/TableBody";
 import Header from "../molecules/Header";
 import Blog from "../organisms/Blog";
 import Services from "../organisms/Services";
@@ -12,8 +8,6 @@ import Welcome from "../organisms/Welcome";
 import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
 import WatchOurVideo from "../organisms/WatchOurVideo";
-import Container from "../atoms/Container";
-import TableCell from "../atoms/TableCell";
 
 const TemplateEmail = ({
   header,
@@ -26,78 +20,40 @@ const TemplateEmail = ({
   says,
   footer,
 }) => {
-  const content = [
-    header,
-    takeOrders,
-    welcome,
-    services,
-    watchOurVideo,
-    menu,
-    blog,
-    says,
-  ];
+  const content = [welcome, services, watchOurVideo, menu, blog, says];
 
   return (
-    <Container maxWidth="sm">
-      <Table>
-        <TableBody>
-          <TableRow>
-            {/* <TableCellNoneBorderBottom align="center">
-              {header}
-            </TableCellNoneBorderBottom> */}
-            {content.map((value, index) => {
-              const key = index;
-              return <TableRow key={key}>{value}</TableRow>;
-            })}
-          </TableRow>
-          {/* <TableRow>
-            <TableCellNoneBorderBottom align="center">
-              <Table>
-                <TableBody>
-                  <TableRow>
-                    <TableCellNoneBorderBottom
-                      align="center"
-                      sx={{
-                        backgroundImage: `url(${IMAGE_BACKGROUND_TAKEORDERS})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                        width: "100%",
-                        height: "400px",
-                      }}
-                    >
-                      {takeOrders}
-                    </TableCellNoneBorderBottom>
-                  </TableRow>
-                </TableBody>
-              </Table>
-            </TableCellNoneBorderBottom>
-          </TableRow> */}
-          {/* <TableRow>
-            <TableCellNoneBorderBottom align="center">
-              <Table>
-                <TableBody>
-                  {content.map((value, index) => {
-                    const key = index;
-                    return (
-                      <TableRow key={key}>
-                        <TableCellNoneBorderBottom
-                          padding="none"
-                          align="center"
-                          variant="body"
-                        >
-                          {value}
-                        </TableCellNoneBorderBottom>
-                      </TableRow>
-                    );
+    <div
+      style={{
+        maxWidth: "600px",
+        margin: "0 auto",
+      }}
+    >
+      <table cellSpacing={0} cellPadding={0}>
+        <tbody>
+          <tr>{header}</tr>
+          <tr>{takeOrders}</tr>
+          <tr>
+            <td style={{ background: "#fff" }}>
+              <table cellSpacing={0} cellPadding={0}>
+                <tbody>
+                  {content.map((item) => {
+                    const key = item;
+                    return <tr key={key}>{item}</tr>;
                   })}
-                </TableBody>
-              </Table>
-            </TableCellNoneBorderBottom>
-          </TableRow> */}
-        </TableBody>
-      </Table>
-      <Table>{footer}</Table>
-    </Container>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr>{footer}</tr>
+          <tr>{footer}</tr>
+        </tbody>
+      </table>
+    </div>
   );
 };
 

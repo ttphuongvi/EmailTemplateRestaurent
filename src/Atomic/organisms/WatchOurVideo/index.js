@@ -15,6 +15,7 @@ import Link from "../../atoms/Link";
 import Stack from "../../atoms/Stack";
 import TypographyLightContent from "../../molecules/TypographyLightContent";
 import TableCellStyles from "../../molecules/TableCellTyles";
+import Image from "../../atoms/Image";
 
 const WatchOurVideo = () => {
   return (
@@ -31,15 +32,14 @@ const WatchOurVideo = () => {
           >
             <Table>
               <TableCellNoneBorderBottom align="center" padding="none">
-                <Box
-                  component="img"
+                <Image
                   src={IMAGE_WATCH_OUR_VIDEO}
-                  sx={{ width: "100%" }}
-                ></Box>
+                  style={{ width: "100%" }}
+                ></Image>
               </TableCellNoneBorderBottom>
             </Table>
             <Box
-              sx={{
+              style={{
                 position: "absolute",
                 top: "50%",
                 left: 0,
@@ -49,11 +49,10 @@ const WatchOurVideo = () => {
               }}
             >
               <Link href="#">
-                <Box
-                  component="img"
+                <Image
                   src={IMAGE_WATCH_OUR_VIDEO_ICON}
-                  sx={{ width: "60px" }}
-                ></Box>
+                  style={{ width: "60px" }}
+                ></Image>
               </Link>
             </Box>
           </TableCellNoneBorderBottom>

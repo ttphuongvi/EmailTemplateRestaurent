@@ -1,5 +1,4 @@
 import React from "react";
-import Box from "../../atoms/Box";
 import Typography from "../../atoms/Typography";
 import Stack from "../../atoms/Stack";
 import Section from "../../molecules/Section";

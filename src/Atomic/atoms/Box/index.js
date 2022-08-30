@@ -1,4 +1,2 @@
-import Box from "@mui/material/Box";
-
-const AtomBox = Box;
+const AtomBox = "div";
 export default AtomBox;

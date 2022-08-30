@@ -1,17 +1,15 @@
 import React from "react";
-import Stack from "../../atoms/Stack";
-import Typography from "../../atoms/Typography";
 import PropTypes from "prop-types";
 
 const Section = ({ caption, title, content }) => {
   return (
-    <Stack justifyContent="center" alignItems="center" spacing={1}>
+    <div align="center">
       {caption}
 
       {title}
 
       {content}
-    </Stack>
+    </div>
   );
 };
 

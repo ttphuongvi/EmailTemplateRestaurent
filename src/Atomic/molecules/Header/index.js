@@ -1,19 +1,20 @@
 import React from "react";
-import Typography from "../../atoms/Typography";
-import { styled } from "@mui/material/styles";
-import TableCellStyles from "../TableCellTyles";
-
-const StyledHeader = styled(Typography)(({ theme }) => ({
-  fontFamily: " 'Montserrat', sans-serif",
-  fontWeight: theme.typography.fontWeightBold,
-  fontSize: "20px",
-}));
 
 const Header = () => {
   return (
-    <TableCellStyles align="center">
-      <StyledHeader>RESTOBAR</StyledHeader>
-    </TableCellStyles>
+    <td align="center" style={{ background: "#fff", padding: "15px" }}>
+      <h1
+        style={{
+          fontSize: "20px",
+          textTransform: "uppercase",
+          fontFamily: " 'Montserrat', sans-serif",
+        }}
+      >
+        <a href="#" style={{ textDecoration: "none", color: "#000" }}>
+          RestoBar
+        </a>
+      </h1>{" "}
+    </td>
   );
 };
 export default Header;

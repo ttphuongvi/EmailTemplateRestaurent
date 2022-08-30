@@ -1,18 +1,22 @@
 import AtomButton from "../../atoms/Button";
-import { alpha, styled } from "@mui/material/styles";
-
-const StylesButton = styled(AtomButton)(({ theme }) => ({
-  backgroundColor: theme.palette.primary.main,
-  color: theme.palette.text.darkContent,
-  textTransform: "none",
-  borderRadius: theme.spacing(3),
-  fontWeight: theme.typography.body1.fontWeight,
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.primary.main, 0.8),
-  },
-}));
+import { useTheme } from "@mui/material/styles";
 
 const Button = (props) => {
-  return <StylesButton variant="container">{props.children}</StylesButton>;
+  const theme = useTheme();
+  return (
+    <a
+      href="#"
+      variant="container"
+      style={{
+        backgroundColor: theme.palette.primary.main,
+        padding: theme.spacing(1, 2),
+        textDecoration: "none",
+        color: theme.palette.common.white,
+        borderRadius: theme.spacing(2),
+      }}
+    >
+      {props.children}
+    </a>
+  );
 };
 export default Button;

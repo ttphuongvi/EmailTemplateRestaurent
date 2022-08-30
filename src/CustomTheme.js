@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material/styles";
-import { amber, grey } from "@mui/material/colors";
+import { grey, yellow } from "@mui/material/colors";
 
 const customTheme = createTheme({
   palette: {
     primary: {
-      main: amber[800],
+      main: yellow[800],
     },
     secondary: {
       main: "#fff",
@@ -36,21 +36,21 @@ const customTheme = createTheme({
       letterSpacing: "2px",
       textTransform: "uppercase",
       paddingBottom: "8px",
-      borderBottom: `2px solid ${amber[800]}`,
+      borderBottom: `2px solid ${yellow[800]}`,
     },
-    title: {
+    subtitle1: {
       fontFamily: "'Playfair Display', serif",
-      fontSize: "28px",
+      fontSize: "30px",
       fontWeight: 700,
       lineHeight: 1.4,
     },
-    subTitle: {
+    subtitle2: {
       fontFamily: "'Playfair Display', serif",
       fontSize: "20px",
       fontWeight: 700,
     },
 
-    content: {
+    body1: {
       fontFamily: "'Montserrat', sans-serif",
       fontWeight: 400,
       fontSize: "15px",
