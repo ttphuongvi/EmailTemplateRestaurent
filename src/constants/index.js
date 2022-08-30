@@ -1,4 +1,4 @@
-export const IMAGE_BACKGROUND_TAKEORDERS =
+export const IMAGE_BACKGROUND =
   "https://colorlib.com/etc/email-template/1/images/bg_1.jpg";
 
 export const IMAGE_SERVICES_HEALTHY_FOOD =

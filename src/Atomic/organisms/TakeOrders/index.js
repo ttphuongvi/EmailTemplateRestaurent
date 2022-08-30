@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../molecules/Button";
-import { IMAGE_BACKGROUND_TAKEORDERS } from "../../../constants";
+import { IMAGE_BACKGROUND } from "../../../constants";
 import TitleDark from "../../molecules/TitleDark";
 import ContentDark from "../../molecules/ContentDark";
 import TableSynthetic from "../../molecules/TableSynthetic";
@@ -9,7 +9,7 @@ const TakeOrders = () => {
   return (
     <td
       style={{
-        backgroundImage: `url(${IMAGE_BACKGROUND_TAKEORDERS})`,
+        backgroundImage: `url(${IMAGE_BACKGROUND})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         width: "100%",
