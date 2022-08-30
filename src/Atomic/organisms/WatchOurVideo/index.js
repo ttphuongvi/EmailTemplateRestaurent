@@ -1,44 +1,35 @@
 import React from "react";
-import Section from "../../molecules/HeadingSection";
-import Table from "../../molecules/TableSynthetic";
-import TableBody from "../../atoms/TableBody";
-import TableCell from "../../atoms/TableCell";
-import TableCellNoneBorderBottom from "../../molecules/TableCellNoneBorderBottom";
-import Typography from "../../atoms/Typography";
-import TableRow from "../../atoms/TableRow";
-import Box from "../../atoms/Box";
 import {
   IMAGE_WATCH_OUR_VIDEO,
   IMAGE_WATCH_OUR_VIDEO_ICON,
 } from "../../../constants";
-import Link from "../../atoms/Link";
-import Stack from "../../atoms/Stack";
-import TypographyLightContent from "../../molecules/TypographyLightContent";
-import TableCellStyles from "../../molecules/TableCellTyles";
-import Image from "../../atoms/Image";
+import { useTheme } from "@mui/material/styles";
+import TableSynthetic from "../../molecules/TableSynthetic";
+import ContentLight from "../../molecules/ContentLight";
 
 const WatchOurVideo = () => {
+  const theme = useTheme();
   return (
-    <TableCellStyles
-      padding="none"
-      sx={(theme) => ({ backgroundColor: theme.palette.background.light })}
+    <td
+      style={{
+        backgroundColor: theme.palette.grey[50],
+        padding: theme.spacing(5),
+      }}
     >
-      <Table>
-        <TableRow>
-          <TableCellNoneBorderBottom
-            align="center"
-            padding="none"
-            sx={{ position: "relative" }}
-          >
-            <Table>
-              <TableCellNoneBorderBottom align="center" padding="none">
-                <Image
-                  src={IMAGE_WATCH_OUR_VIDEO}
-                  style={{ width: "100%" }}
-                ></Image>
-              </TableCellNoneBorderBottom>
-            </Table>
-            <Box
+      <TableSynthetic>
+        <tr>
+          <td align="center" style={{ position: "relative" }}>
+            <TableSynthetic>
+              <tr>
+                <td align="center" padding="none">
+                  <img
+                    src={IMAGE_WATCH_OUR_VIDEO}
+                    style={{ width: "100%" }}
+                  ></img>
+                </td>
+              </tr>
+            </TableSynthetic>
+            <div
               style={{
                 position: "absolute",
                 top: "50%",
@@ -48,33 +39,36 @@ const WatchOurVideo = () => {
                 marginTop: "-25px",
               }}
             >
-              <Link href="#">
-                <Image
+              <a
+                href="#"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: "50%",
+                  marginLeft: "-25px",
+                  width: "60px",
+                }}
+              >
+                <img
                   src={IMAGE_WATCH_OUR_VIDEO_ICON}
                   style={{ width: "60px" }}
-                ></Image>
-              </Link>
-            </Box>
-          </TableCellNoneBorderBottom>
-        </TableRow>
-        <TableRow>
-          <TableCellNoneBorderBottom
-            align="center"
-            padding="none"
-            sx={(theme) => ({ paddingTop: theme.spacing(2) })}
-          >
-            <Stack spacing={1}>
-              <Typography variant="title">Watch Our Video</Typography>
-              <TypographyLightContent>
-                A small river named Duden flows by their place and supplies it
-                with the necessary regelialia. It is a paradisematic country, in
-                which roasted parts of sentences fly into your mouth.
-              </TypographyLightContent>
-            </Stack>
-          </TableCellNoneBorderBottom>
-        </TableRow>
-      </Table>
-    </TableCellStyles>
+                ></img>
+              </a>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">
+            <h2>Watch Our Video</h2>
+            <ContentLight>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth.
+            </ContentLight>
+          </td>
+        </tr>
+      </TableSynthetic>
+    </td>
   );
 };
 
