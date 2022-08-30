@@ -27,3 +27,7 @@ export const IMAGE_BLOG_1 =
   "https://colorlib.com/etc/email-template/1/images/blog-1.jpg";
 export const IMAGE_BLOG_2 =
   "https://colorlib.com/etc/email-template/1/images/blog-2.jpg";
+export const IMAGE_USER_1 =
+  "https://colorlib.com/etc/email-template/1/images/person_1.jpg";
+export const IMAGE_USER_2 =
+  "https://colorlib.com/etc/email-template/1/images/person_2.jpg";
