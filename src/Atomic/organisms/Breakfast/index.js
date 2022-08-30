@@ -1,6 +1,5 @@
 import React from "react";
 import { IMAGE_BREAKFAST } from "../../../constants";
-
 import TableFoodImageRight from "../../molecules/TableFoodImageRight";
 
 const Breakfasts = () => {

@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 const TableFoodImageLeft = ({ caption, image, title, content }) => {
   const theme = useTheme();
   return (
-    <td style={{ backgroundColor: theme.palette.grey[50] }}>
+    <td style={{ backgroundColor: theme.palette.grey[50], padding: 0 }}>
       <TableSynthetic>
         <tr>
           <td valign="middle" style={{ width: "50%" }}>

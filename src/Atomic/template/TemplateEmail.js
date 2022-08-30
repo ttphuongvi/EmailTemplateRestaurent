@@ -9,6 +9,9 @@ import Says from "../organisms/Says";
 import Footer from "../organisms/Footer";
 import WatchOurVideo from "../organisms/WatchOurVideo";
 import Breakfast from "../organisms/Breakfast";
+import Lunch from "../organisms/Lunch";
+import TableSynthetic from "../molecules/TableSynthetic";
+import { Table } from "@mui/material";
 
 const TemplateEmail = ({
   header,
@@ -18,6 +21,7 @@ const TemplateEmail = ({
   watchOurVideo,
   menu,
   breakfast,
+  lunch,
   blog,
   says,
   footer,
@@ -28,6 +32,7 @@ const TemplateEmail = ({
     watchOurVideo,
     menu,
     breakfast,
+    lunch,
     blog,
     says,
   ];
@@ -39,30 +44,24 @@ const TemplateEmail = ({
         margin: "0 auto",
       }}
     >
-      <table cellSpacing={0} cellPadding={0}>
-        <tbody>
-          <tr>{header}</tr>
-          <tr>{takeOrders}</tr>
-          <tr>
-            <td style={{ background: "#fff" }}>
-              <table cellSpacing={0} cellPadding={0}>
-                <tbody>
-                  {content.map((item) => {
-                    const key = item;
-                    return <tr key={key}>{item}</tr>;
-                  })}
-                </tbody>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
-        <tbody>
-          <tr>{footer}</tr>
-          <tr>{footer}</tr>
-        </tbody>
-      </table>
+      <TableSynthetic>
+        <tr>{header}</tr>
+        <tr>{takeOrders}</tr>
+        <tr>
+          <td style={{ background: "#fff" }}>
+            <TableSynthetic>
+              {content.map((item) => {
+                const key = item;
+                return <tr key={key}>{item}</tr>;
+              })}
+            </TableSynthetic>
+          </td>
+        </tr>
+      </TableSynthetic>
+      <TableSynthetic>
+        <tr>{footer}</tr>
+        <tr>{footer}</tr>
+      </TableSynthetic>
     </div>
   );
 };
@@ -75,6 +74,7 @@ TemplateEmail.defaultProps = {
   watchOurVideo: <WatchOurVideo />,
   menu: <Menu />,
   breakfast: <Breakfast />,
+  lunch: <Lunch />,
   blog: <Blog />,
   says: <Says />,
   footer: <Footer />,
