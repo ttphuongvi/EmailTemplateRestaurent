@@ -13,7 +13,7 @@ const HeadingSection = ({ caption, title, content }) => {
   );
 };
 
-Section.prototype = {
+HeadingSection.prototype = {
   caption: PropTypes.node,
   title: PropTypes.node,
   content: PropTypes.node,
