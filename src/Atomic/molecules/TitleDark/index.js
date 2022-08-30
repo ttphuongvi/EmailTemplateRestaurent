@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "@mui/material/styles";
 
-const SubtitleDark = (props) => {
+const TitleDark = (props) => {
   const theme = useTheme();
   return (
     <h2
@@ -16,4 +16,4 @@ const SubtitleDark = (props) => {
   );
 };
 
-export default SubtitleDark;
+export default TitleDark;

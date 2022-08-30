@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../molecules/Button";
 import { IMAGE_BACKGROUND_TAKEORDERS } from "../../../constants";
-import SubtitleDark from "../../molecules/SubTitleDark";
+import TitleDark from "../../molecules/TitleDark";
 import ContentDark from "../../molecules/ContentDark";
 
 const TakeOrders = () => {
@@ -20,12 +20,12 @@ const TakeOrders = () => {
           <tr>
             <td align="center">
               <div align="center" style={{ padding: "0 20px" }}>
-                <SubtitleDark
+                <TitleDark
                   variant="title"
                   sx={(theme) => ({ color: theme.palette.text.darktitle })}
                 >
                   We Serve Healthy & Delicious Foods
-                </SubtitleDark>
+                </TitleDark>
 
                 <>
                   <ContentDark>
@@ -39,27 +39,6 @@ const TakeOrders = () => {
               </div>
             </td>
           </tr>
-          {/* <Stack spacing={1} justifyContent="center" alignItems="center">
-          <Typography
-            variant="title"
-            sx={(theme) => ({
-              color: theme.palette.text.darktitle,
-            })}
-          >
-            We Serve Healthy & Delicious Foods
-          </Typography>
-         
-        </Stack> */}
-
-          {/* <Section
-          backgroundColor="theme.palette.background.black"
-          color="darktitle"
-          title="We Serve Healthy & Delicious Foods"
-        ></Section> */}
-
-          {/* <Image ratio={4 / 3} src={IMAGE_BACKGROUND_TAKEORDERS} /> */}
-
-          {/* <Box>aaa</Box> */}
         </tbody>
       </table>
     </td>

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Section = ({ caption, title, content }) => {
+const HeadingSection = ({ caption, title, content }) => {
   return (
     <div align="center">
       {caption}
@@ -19,4 +19,4 @@ Section.prototype = {
   content: PropTypes.node,
 };
 
-export default Section;
+export default HeadingSection;

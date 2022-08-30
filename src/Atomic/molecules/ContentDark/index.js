@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "@mui/material/styles";
+import { alpha, useTheme } from "@mui/material/styles";
 
 const ContentDark = (props) => {
   const theme = useTheme();
@@ -10,7 +10,7 @@ const ContentDark = (props) => {
         fontWeight: theme.typography.body1.fontWeight,
         fontSize: theme.typography.body1.fontSize,
         lineHeight: theme.typography.body1.lineHeight,
-        color: theme.palette.grey[200],
+        color: alpha(theme.palette.common.white, 0.8),
       }}
     >
       {props.children}

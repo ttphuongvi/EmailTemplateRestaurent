@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../molecules/Section";
+import Section from "../../molecules/HeadingSection";
 import TableCell from "../../atoms/TableCell";
 import TableRow from "../../atoms/TableRow";
 import Typography from "../../atoms/Typography";

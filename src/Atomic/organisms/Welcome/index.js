@@ -1,46 +1,32 @@
 import React from "react";
-import Typography from "../../atoms/Typography";
-import Stack from "../../atoms/Stack";
-import Section from "../../molecules/Section";
-import TableCellStyles from "../../molecules/TableCellTyles";
+import Section from "../../molecules/HeadingSection";
+import { useTheme } from "@mui/material/styles";
+import CaptionDark from "../../molecules/CaptionDark";
+import TitleDark from "../../molecules/TitleDark";
+import ContentDark from "../../molecules/ContentDark";
 
 const Welcome = () => {
+  const theme = useTheme();
   return (
-    <TableCellStyles
+    <td
       align="center"
-      sx={(theme) => ({ backgroundColor: theme.palette.background.dark })}
+      style={{
+        backgroundColor: theme.palette.grey[900],
+        padding: theme.spacing(5),
+      }}
     >
       <Section
-        caption={
-          <Typography
-            variant="caption"
-            sx={(theme) => ({
-              color: theme.palette.text.darkCaption,
-            })}
-          >
-            Welcom
-          </Typography>
-        }
-        title={
-          <Typography
-            variant="title"
-            sx={(theme) => ({ color: theme.palette.text.darktitle })}
-          >
-            Welcome To RestoBar
-          </Typography>
-        }
+        caption={<CaptionDark>Welcom</CaptionDark>}
+        title={<TitleDark>Welcome To RestoBar</TitleDark>}
         content={
-          <Typography
-            variant="content"
-            sx={(theme) => ({ color: theme.palette.text.darkContent })}
-          >
+          <ContentDark>
             A small river named Duden flows by their place and supplies it with
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts of sentences fly into your mouth.
-          </Typography>
+          </ContentDark>
         }
       ></Section>
-    </TableCellStyles>
+    </td>
   );
 };
 export default Welcome;

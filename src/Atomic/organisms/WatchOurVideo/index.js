@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../molecules/Section";
+import Section from "../../molecules/HeadingSection";
 import Table from "../../molecules/TableSynthetic";
 import TableBody from "../../atoms/TableBody";
 import TableCell from "../../atoms/TableCell";

@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../molecules/Section";
+import Section from "../../molecules/HeadingSection";
 import TableCellStyles from "../../molecules/TableCellTyles";
 import TypographyLightContent from "../../molecules/TypographyLightContent";
 
