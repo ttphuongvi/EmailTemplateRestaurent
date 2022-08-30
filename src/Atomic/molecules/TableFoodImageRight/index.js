@@ -5,10 +5,10 @@ import TableFoodImage from "../TableFoodImage";
 import { useTheme } from "@mui/material/styles";
 import PropTypes from "prop-types";
 
-const TableFoodImageRight = ({ caption, image, title, content }) => {
+const TableFoodImageRight = ({ caption, image, title, content, id }) => {
   const theme = useTheme();
   return (
-    <td style={{ backgroundColor: theme.palette.grey[50] }}>
+    <td style={{ backgroundColor: theme.palette.grey[50] }} id={id}>
       <TableSynthetic>
         <tr>
           <td style={{ width: "50%" }}>
@@ -28,6 +28,7 @@ const TableFoodImageRight = ({ caption, image, title, content }) => {
   );
 };
 TableFoodImageRight.propTypes = {
+  id: PropTypes.string,
   caption: PropTypes.string,
   image: PropTypes.string,
   title: PropTypes.string,

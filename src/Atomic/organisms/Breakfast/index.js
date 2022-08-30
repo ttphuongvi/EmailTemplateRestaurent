@@ -5,6 +5,7 @@ import TableFoodImageRight from "../../molecules/TableFoodImageRight";
 const Breakfasts = () => {
   return (
     <TableFoodImageRight
+      id="breakfast"
       caption="Breakfast"
       image={IMAGE_BREAKFAST}
       title="Grilled Beef with potatoes"

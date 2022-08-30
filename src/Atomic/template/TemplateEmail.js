@@ -15,6 +15,8 @@ import { Table } from "@mui/material";
 import Dinner from "../organisms/Dinner";
 import Dessert from "../organisms/Dessert";
 import Count from "../organisms/Count";
+import FooterInfo from "../organisms/FooterInfo";
+import FooterCopyrights from "../organisms/FooteCopyrights";
 
 const TemplateEmail = ({
   header,
@@ -30,7 +32,8 @@ const TemplateEmail = ({
   count,
   blog,
   says,
-  footer,
+  footerCopyrights,
+  footerInfo,
 }) => {
   const content = [
     welcome,
@@ -67,9 +70,10 @@ const TemplateEmail = ({
           </td>
         </tr>
       </TableSynthetic>
+
       <TableSynthetic>
-        <tr>{footer}</tr>
-        <tr>{footer}</tr>
+        <tr>{footerInfo}</tr>
+        <tr>{footerCopyrights}</tr>
       </TableSynthetic>
     </div>
   );
@@ -89,7 +93,8 @@ TemplateEmail.defaultProps = {
   count: <Count />,
   blog: <Blog />,
   says: <Says />,
-  footer: <Footer />,
+  footerInfo: <FooterInfo />,
+  footerCopyrights: <FooterCopyrights />,
 };
 
 export default TemplateEmail;

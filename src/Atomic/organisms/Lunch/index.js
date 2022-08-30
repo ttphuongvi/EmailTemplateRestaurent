@@ -5,6 +5,7 @@ import TableFoodImageLeft from "../../molecules/TableFoodImageLeft";
 const Lunch = () => {
   return (
     <TableFoodImageLeft
+      id="lunch"
       caption="Lunch"
       title="Grilled Beef with potatoes"
       content="A small river named Duden flows by their place and supplies it with the necessary regelialia."
