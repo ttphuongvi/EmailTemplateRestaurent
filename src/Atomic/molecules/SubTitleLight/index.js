@@ -9,6 +9,7 @@ const SubTitleLight = (props) => {
         fontSize: theme.typography.subtitle2.fontSize,
         fontFamily: theme.typography.subtitle2.fontFamily,
         color: theme.palette.common.black,
+        marginTop: 0,
       }}
     >
       {props.children}

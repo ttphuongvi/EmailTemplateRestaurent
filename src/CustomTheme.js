@@ -40,7 +40,7 @@ const customTheme = createTheme({
     },
     subtitle1: {
       fontFamily: "'Playfair Display', serif",
-      fontSize: "30px",
+      fontSize: "28px",
       fontWeight: 700,
       lineHeight: 1.4,
     },
