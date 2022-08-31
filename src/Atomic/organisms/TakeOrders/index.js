@@ -20,12 +20,7 @@ const TakeOrders = () => {
         <tr>
           <td align="center">
             <div align="center" style={{ padding: "0 20px" }}>
-              <TitleDark
-                variant="title"
-                sx={(theme) => ({ color: theme.palette.text.darktitle })}
-              >
-                We Serve Healthy & Delicious Foods
-              </TitleDark>
+              <TitleDark>We Serve Healthy & Delicious Foods</TitleDark>
 
               <>
                 <ContentDark>

@@ -6,7 +6,6 @@ import TakeOrders from "../organisms/TakeOrders";
 import Menu from "../organisms/Menu";
 import Welcome from "../organisms/Welcome";
 import Says from "../organisms/Says";
-import Footer from "../organisms/Footer";
 import WatchOurVideo from "../organisms/WatchOurVideo";
 import Breakfast from "../organisms/Breakfast";
 import Lunch from "../organisms/Lunch";

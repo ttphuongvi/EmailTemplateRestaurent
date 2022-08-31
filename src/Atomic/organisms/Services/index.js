@@ -40,13 +40,13 @@ const Services = () => {
               content="Far far away, behind the word mountains, far from the countries"
             />
           </td>
-          <TableCell padding="none" sx={{ borderBottom: "none" }}>
+          <td>
             <TableContentServices
               image={IMAGE_SERVICES_ORIGINAL_RECIPES}
               subTitle="Original Recipes"
               content="Far far away, behind the word mountains, far from the countries"
             />
-          </TableCell>
+          </td>
         </tr>
       </TableSynthetic>
     </td>
