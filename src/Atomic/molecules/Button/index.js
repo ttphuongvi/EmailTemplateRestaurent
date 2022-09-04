@@ -1,4 +1,3 @@
-import AtomButton from "../../atoms/Button";
 import { useTheme } from "@mui/material/styles";
 
 const Button = (props) => {

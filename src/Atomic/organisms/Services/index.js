@@ -1,15 +1,9 @@
 import React from "react";
-import Section from "../../molecules/HeadingSection";
-import TableCell from "../../atoms/TableCell";
-import TableRow from "../../atoms/TableRow";
-import Typography from "../../atoms/Typography";
 import TableContentServices from "../../molecules/TableContentServices";
 import {
   IMAGE_SERVICES_HEALTHY_FOOD,
   IMAGE_SERVICES_ORIGINAL_RECIPES,
 } from "../../../constants";
-import Stack from "../../atoms/Stack";
-import TableCellStyles from "../../molecules/TableCellTyles";
 import TableSynthetic from "../../molecules/TableSynthetic";
 import HeadingSection from "../../molecules/HeadingSection";
 import CaptionLight from "../../molecules/CaptionLight";
