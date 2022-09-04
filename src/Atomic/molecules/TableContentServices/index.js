@@ -7,20 +7,17 @@ import ContentLight from "../ContentLight";
 
 const TableContentServices = ({ image, subTitle, content }) => {
   const theme = useTheme();
+
   return (
     <TableSynthetic>
       <tr>
-        <td style={{ paddingTop: theme.spacing(3) }} align="center">
-          <img
-            alt=""
-            src={image}
-            style={{ width: "60px", maxWidth: "60px" }}
-          ></img>
+        <td align="center">
+          <img alt={subTitle} src={image} style={{ width: "60px" }}></img>
         </td>
       </tr>
       <tr>
-        <td align="center">
-          <SubTitleLight variant="subTitle">{subTitle}</SubTitleLight>
+        <td align="center" style={{ paddingTop: theme.spacing(1) }}>
+          <SubTitleLight>{subTitle}</SubTitleLight>
           <ContentLight>{content}</ContentLight>
         </td>
       </tr>

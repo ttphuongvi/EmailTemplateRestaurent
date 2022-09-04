@@ -19,6 +19,22 @@ import ContentLight from "../../molecules/ContentLight";
 
 const Services = () => {
   const theme = useTheme();
+
+  const services = [
+    {
+      image: IMAGE_SERVICES_HEALTHY_FOOD,
+      subTitle: "Healthy Food",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+    {
+      image: IMAGE_SERVICES_ORIGINAL_RECIPES,
+      subTitle: "Original Recipes",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+  ];
+
   return (
     <td align="center" style={{ padding: theme.spacing(5) }}>
       <HeadingSection
@@ -33,20 +49,18 @@ const Services = () => {
       ></HeadingSection>
       <TableSynthetic>
         <tr>
-          <td>
-            <TableContentServices
-              image={IMAGE_SERVICES_HEALTHY_FOOD}
-              subTitle="Healthy Foods"
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
-          <td>
-            <TableContentServices
-              image={IMAGE_SERVICES_ORIGINAL_RECIPES}
-              subTitle="Original Recipes"
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
+          {services.map((item, index) => {
+            const key = index;
+            return (
+              <td style={{ paddingTop: theme.spacing(3) }} key={key}>
+                <TableContentServices
+                  image={item.image}
+                  subTitle={item.subTitle}
+                  content={item.content}
+                ></TableContentServices>
+              </td>
+            );
+          })}
         </tr>
       </TableSynthetic>
     </td>

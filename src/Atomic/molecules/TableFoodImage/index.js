@@ -4,13 +4,24 @@ import { PropTypes } from "prop-types";
 
 const TableFoodImage = ({ image }) => {
   return (
-    <TableSynthetic>
-      <tr>
-        <td>
-          <img style={{ width: "100%" }} alt="" src={image}></img>
-        </td>
-      </tr>
-    </TableSynthetic>
+    <table
+      cellPadding={0}
+      cellSpacing={0}
+      border={0}
+      style={{ borderSpacing: 0 }}
+    >
+      <tbody>
+        <tr>
+          <td>
+            <img
+              style={{ width: "100%", height: "100%", display: "block" }}
+              alt=""
+              src={image}
+            ></img>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   );
 };
 

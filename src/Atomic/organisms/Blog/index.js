@@ -15,6 +15,23 @@ import TableBlogFood from "../../molecules/TableBlogFood";
 
 const Blog = () => {
   const theme = useTheme();
+
+  const blog = [
+    {
+      image: IMAGE_BLOG_1,
+      dateSubmitted: "POSTED ON FEB 18, 2019 FOOD",
+      subTitle: "Healthy Foods For Kids",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+    {
+      image: IMAGE_BLOG_2,
+      dateSubmitted: "POSTED ON FEB 18, 2019 FOOD",
+      subTitle: "A Fresh Food Organic",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+  ];
   return (
     <td
       align="center"
@@ -35,22 +52,20 @@ const Blog = () => {
       />
       <TableSynthetic>
         <tr>
-          <td width={"50%"} style={{ paddingTop: "20px" }}>
-            <TableBlogFood
-              image={IMAGE_BLOG_1}
-              meta="POSTED ON FEB 18, 2019 FOOD"
-              subTitle={"Healthy Foods For Kids"}
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
-          <td width={"50%"} style={{ paddingTop: "20px" }}>
-            <TableBlogFood
-              image={IMAGE_BLOG_2}
-              meta="POSTED ON FEB 18, 2019 FOOD"
-              subTitle={"A Fresh Food Organic"}
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
+          {blog.map((item, index) => {
+            const key = index;
+
+            return (
+              <td key={key} width="50%" style={{ paddingTop: "20px" }}>
+                <TableBlogFood
+                  image={item.image}
+                  dateSubmitted={item.dateSubmitted}
+                  subTitle={item.subTitle}
+                  content={item.content}
+                />
+              </td>
+            );
+          })}
         </tr>
       </TableSynthetic>
     </td>

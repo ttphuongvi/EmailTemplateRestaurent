@@ -4,7 +4,6 @@ import TableSynthetic from "../TableSynthetic";
 import { useTheme } from "@mui/material/styles";
 import HeadingSection from "../HeadingSection";
 import CaptionLight from "../CaptionLight";
-import SubTitleLight from "../SubTitleLight";
 import ContentLight from "../ContentLight";
 import Button from "../Button";
 
@@ -13,7 +12,7 @@ const TableFoodContent = ({ caption, title, content, action }) => {
   return (
     <TableSynthetic>
       <tr>
-        <td style={{ padding: theme.spacing(2, 4), textAlign: "left" }}>
+        <td style={{ padding: theme.spacing(2, 4) }}>
           <HeadingSection
             caption={<CaptionLight>{caption}</CaptionLight>}
             title={

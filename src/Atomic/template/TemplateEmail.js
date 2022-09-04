@@ -10,7 +10,6 @@ import WatchOurVideo from "../organisms/WatchOurVideo";
 import Breakfast from "../organisms/Breakfast";
 import Lunch from "../organisms/Lunch";
 import TableSynthetic from "../molecules/TableSynthetic";
-import { Table } from "@mui/material";
 import Dinner from "../organisms/Dinner";
 import Dessert from "../organisms/Dessert";
 import Count from "../organisms/Count";
@@ -35,6 +34,8 @@ const TemplateEmail = ({
   footerInfo,
 }) => {
   const content = [
+    header,
+    takeOrders,
     welcome,
     services,
     watchOurVideo,
@@ -46,35 +47,17 @@ const TemplateEmail = ({
     count,
     blog,
     says,
+    footerInfo,
+    footerCopyrights,
   ];
 
   return (
-    <div
-      style={{
-        maxWidth: "600px",
-        margin: "0 auto",
-      }}
-    >
-      <TableSynthetic>
-        <tr>{header}</tr>
-        <tr>{takeOrders}</tr>
-        <tr>
-          <td style={{ background: "#fff" }}>
-            <TableSynthetic>
-              {content.map((item) => {
-                const key = item;
-                return <tr key={key}>{item}</tr>;
-              })}
-            </TableSynthetic>
-          </td>
-        </tr>
-      </TableSynthetic>
-
-      <TableSynthetic>
-        <tr>{footerInfo}</tr>
-        <tr>{footerCopyrights}</tr>
-      </TableSynthetic>
-    </div>
+    <TableSynthetic>
+      {content.map((item, index) => {
+        const key = index;
+        return <tr key={key}>{item}</tr>;
+      })}
+    </TableSynthetic>
   );
 };
 

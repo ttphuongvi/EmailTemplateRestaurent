@@ -10,6 +10,23 @@ import { IMAGE_USER_1, IMAGE_USER_2 } from "../../../constants";
 
 const Says = () => {
   const theme = useTheme();
+
+  const says = [
+    {
+      image: IMAGE_USER_1,
+      name: "Ronald Tuff",
+      job: "Businessman",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+    {
+      image: IMAGE_USER_2,
+      name: "Willam Clarson",
+      job: "Businessman",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+  ];
   return (
     <td
       align="center"
@@ -30,22 +47,24 @@ const Says = () => {
       />
       <TableSynthetic>
         <tr>
-          <td width="50%" style={{ paddingTop: theme.spacing(2) }}>
-            <TableSays
-              image={IMAGE_USER_1}
-              name="Ronald Tuff"
-              job="Businessman"
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
-          <td width="50%" style={{ paddingTop: theme.spacing(2) }}>
-            <TableSays
-              image={IMAGE_USER_2}
-              name="Willam Clarson"
-              job="Businessman"
-              content="Far far away, behind the word mountains, far from the countries"
-            />
-          </td>
+          {says.map((item, index) => {
+            const key = index;
+
+            return (
+              <td
+                key={key}
+                width="50%"
+                style={{ paddingTop: theme.spacing(2) }}
+              >
+                <TableSays
+                  image={item.image}
+                  name={item.name}
+                  job={item.job}
+                  content={item.content}
+                />
+              </td>
+            );
+          })}
         </tr>
       </TableSynthetic>
     </td>

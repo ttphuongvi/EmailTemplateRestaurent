@@ -6,7 +6,7 @@ import SubTitleLight from "../SubTitleLight";
 import ContentLight from "../ContentLight";
 import Button from "../Button";
 
-const TableBlogFood = ({ image, meta, subTitle, content }) => {
+const TableBlogFood = ({ image, dateSubmitted, subTitle, content }) => {
   const theme = useTheme();
   return (
     <TableSynthetic>
@@ -25,7 +25,7 @@ const TableBlogFood = ({ image, meta, subTitle, content }) => {
               color: alpha(theme.palette.common.black, 0.4),
             }}
           >
-            {meta}
+            {dateSubmitted}
           </p>
           <SubTitleLight>{subTitle}</SubTitleLight>
           <ContentLight>{content}</ContentLight>
@@ -40,7 +40,7 @@ const TableBlogFood = ({ image, meta, subTitle, content }) => {
 
 TableBlogFood.propTypes = {
   image: PropTypes.string,
-  meta: PropTypes.string,
+  dateSubmitted: PropTypes.string,
   subTitle: PropTypes.string,
   content: PropTypes.string,
 };

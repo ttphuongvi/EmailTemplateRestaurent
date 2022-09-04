@@ -9,6 +9,7 @@ import ContentLight from "../../molecules/ContentLight";
 
 const WatchOurVideo = () => {
   const theme = useTheme();
+
   return (
     <td
       style={{
@@ -18,10 +19,10 @@ const WatchOurVideo = () => {
     >
       <TableSynthetic>
         <tr>
-          <td align="center" style={{ position: "relative" }}>
+          <td style={{ position: "relative" }}>
             <TableSynthetic>
               <tr>
-                <td align="center" padding="none">
+                <td>
                   <img
                     src={IMAGE_WATCH_OUR_VIDEO}
                     style={{ width: "100%" }}

@@ -1,9 +1,9 @@
 import React from "react";
-import Section from "../../molecules/HeadingSection";
 import { useTheme } from "@mui/material/styles";
 import CaptionDark from "../../molecules/CaptionDark";
 import TitleDark from "../../molecules/TitleDark";
 import ContentDark from "../../molecules/ContentDark";
+import HeadingSection from "../../molecules/HeadingSection";
 
 const Welcome = () => {
   const theme = useTheme();
@@ -15,7 +15,7 @@ const Welcome = () => {
         padding: theme.spacing(5),
       }}
     >
-      <Section
+      <HeadingSection
         caption={<CaptionDark>Welcom</CaptionDark>}
         title={<TitleDark>Welcome To RestoBar</TitleDark>}
         content={
@@ -25,7 +25,7 @@ const Welcome = () => {
             roasted parts of sentences fly into your mouth.
           </ContentDark>
         }
-      ></Section>
+      ></HeadingSection>
     </td>
   );
 };

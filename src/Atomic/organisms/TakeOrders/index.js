@@ -4,8 +4,12 @@ import { IMAGE_BACKGROUND } from "../../../constants";
 import TitleDark from "../../molecules/TitleDark";
 import ContentDark from "../../molecules/ContentDark";
 import TableSynthetic from "../../molecules/TableSynthetic";
+import HeadingSection from "../../molecules/HeadingSection";
+import { useTheme } from "@mui/material/styles";
 
 const TakeOrders = () => {
+  const theme = useTheme();
+
   return (
     <td
       style={{
@@ -14,23 +18,26 @@ const TakeOrders = () => {
         backgroundSize: "cover",
         width: "100%",
         height: "400px",
+        padding: theme.spacing(0, 5),
       }}
     >
       <TableSynthetic>
         <tr>
           <td align="center">
-            <div align="center" style={{ padding: "0 20px" }}>
-              <TitleDark>We Serve Healthy & Delicious Foods</TitleDark>
-
-              <>
-                <ContentDark>
-                  A small river named Duden flows by their place and supplies it
-                  with the necessary regelialia. It is a paradisematic country,
-                  in which roasted parts of sentences fly into your mouth.
-                </ContentDark>
-                <Button>Get Your Order Here!</Button>
-              </>
-            </div>
+            <HeadingSection
+              title={<TitleDark>We Serve Healthy & Delicious Foods</TitleDark>}
+              content={
+                <>
+                  <ContentDark>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </ContentDark>
+                  <Button>Get Your Order Here!</Button>
+                </>
+              }
+            ></HeadingSection>
           </td>
         </tr>
       </TableSynthetic>

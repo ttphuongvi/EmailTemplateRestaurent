@@ -10,6 +10,22 @@ import { IMAGE_MENU_PASTA, IMAGE_MENU_SWEETENED } from "../../../constants";
 
 const Menu = () => {
   const theme = useTheme();
+
+  const menu = [
+    {
+      image: IMAGE_MENU_PASTA,
+      subTitle: "Pasta, Sauce Milk",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+    {
+      image: IMAGE_MENU_SWEETENED,
+      subTitle: "Sweetened Fruits",
+      content:
+        "Far far away, behind the word mountains, far from the countries",
+    },
+  ];
+
   return (
     <td align="center" style={{ padding: theme.spacing(5) }}>
       <HeadingSection
@@ -24,21 +40,19 @@ const Menu = () => {
       ></HeadingSection>
       <TableSynthetic>
         <tr>
-          <td style={{ width: "50%" }}>
-            <TableDeliciousFood
-              image={IMAGE_MENU_PASTA}
-              subTitle="Pasta, Sauce Milk"
-              content="Far far away, behind the word mountains, far from the countries"
-            ></TableDeliciousFood>
-          </td>
-          <td>
-            {" "}
-            <TableDeliciousFood
-              image={IMAGE_MENU_SWEETENED}
-              subTitle="Sweetened Fruits"
-              content="Far far away, behind the word mountains, far from the countries"
-            ></TableDeliciousFood>
-          </td>
+          {menu.map((item, index) => {
+            const key = index;
+
+            return (
+              <td key={key} width="50%">
+                <TableDeliciousFood
+                  image={item.image}
+                  subTitle={item.subTitle}
+                  content={item.content}
+                ></TableDeliciousFood>
+              </td>
+            );
+          })}
         </tr>
       </TableSynthetic>
     </td>
