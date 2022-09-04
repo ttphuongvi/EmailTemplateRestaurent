@@ -11,7 +11,7 @@ const TableFoodImageRight = ({ caption, image, title, content, id }) => {
     <td style={{ backgroundColor: theme.palette.grey[50] }} id={id}>
       <TableSynthetic>
         <tr>
-          <td style={{ width: "50%" }}>
+          <td width="50%">
             <TableFoodContent
               caption={caption}
               title={title}
@@ -19,7 +19,7 @@ const TableFoodImageRight = ({ caption, image, title, content, id }) => {
               action="Read more"
             />
           </td>
-          <td style={{ width: "50%" }}>
+          <td width="50%">
             <TableFoodImage image={image} />
           </td>
         </tr>

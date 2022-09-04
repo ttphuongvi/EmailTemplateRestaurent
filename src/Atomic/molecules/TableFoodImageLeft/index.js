@@ -11,10 +11,10 @@ const TableFoodImageLeft = ({ id, caption, image, title, content }) => {
     <td id={id} style={{ backgroundColor: theme.palette.grey[50], padding: 0 }}>
       <TableSynthetic>
         <tr>
-          <td valign="middle" style={{ width: "50%" }}>
+          <td valign="middle" width="50%">
             <TableFoodImage image={image} />
           </td>
-          <td valign="middle" style={{ width: "50%" }}>
+          <td valign="middle" width="50%">
             <TableFoodContent
               caption={caption}
               title={title}

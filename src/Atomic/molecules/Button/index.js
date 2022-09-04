@@ -5,7 +5,6 @@ const Button = (props) => {
   return (
     <a
       href="#"
-      variant="container"
       style={{
         backgroundColor: theme.palette.primary.main,
         padding: theme.spacing(1, 2),
