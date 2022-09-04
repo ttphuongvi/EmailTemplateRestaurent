@@ -6,28 +6,6 @@ const customTheme = createTheme({
     primary: {
       main: yellow[800],
     },
-    secondary: {
-      main: "#fff",
-    },
-    lightCaption: {
-      main: "rgba(0,0,0)",
-    },
-    darkCaption: {
-      main: "rgba(255,255,255)",
-    },
-
-    text: {
-      lightContent: "rgba(0,0,0,.4)",
-      darkContent: "rgba(255,255,255,.8)",
-      lighttitle: "rgba(0,0,0)",
-      darktitle: "rgba(255,255,255)",
-      lightCaption: "rgba(0,0,0,.4)",
-      darkCaption: "rgba(255,255,255,.4)",
-    },
-    background: {
-      dark: "rgba(0,0,0,.8)",
-      light: grey[50],
-    },
   },
   typography: {
     caption: {
