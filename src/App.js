@@ -6,14 +6,7 @@ import customTheme from "./CustomTheme";
 const App = () => {
   return (
     <ThemeProvider theme={customTheme}>
-      <div
-        style={{
-          maxWidth: "600px",
-          margin: "0 auto",
-        }}
-      >
-        <TemplateEmail />
-      </div>
+      <TemplateEmail />
     </ThemeProvider>
   );
 };

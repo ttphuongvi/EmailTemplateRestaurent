@@ -52,12 +52,23 @@ const TemplateEmail = ({
   ];
 
   return (
-    <TableSynthetic>
-      {content.map((item, index) => {
-        const key = index;
-        return <tr key={key}>{item}</tr>;
-      })}
-    </TableSynthetic>
+    <table
+      cellPadding={0}
+      cellSpacing={0}
+      border={0}
+      width="100%"
+      style={{
+        maxWidth: "600px",
+        margin: "0 auto",
+      }}
+    >
+      <tbody>
+        {content.map((item, index) => {
+          const key = index;
+          return <tr key={key}>{item}</tr>;
+        })}
+      </tbody>
+    </table>
   );
 };
 
