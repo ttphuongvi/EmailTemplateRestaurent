@@ -9,14 +9,13 @@ const FooterCopyrights = () => {
     <td
       style={{
         backgroundColor: theme.palette.common.black,
-        padding: theme.spacing(5),
-        borderTop: `1px solid ${theme.palette.grey[800]}`,
+        padding: theme.spacing(0, 5),
       }}
     >
       <table>
         <tbody>
           <tr>
-            <td valign="top" width={"33.333%"}>
+            <td valign="top" width={"30%"}>
               <TableSynthetic>
                 <tr>
                   <td align="left">
@@ -31,7 +30,9 @@ const FooterCopyrights = () => {
               <TableSynthetic>
                 <tr>
                   <td align="right">
-                    <ContentDark>Unsubcribe</ContentDark>
+                    <a href="#" style={{ textDecoration: "none" }}>
+                      <ContentDark>Unsubcribe</ContentDark>
+                    </a>
                   </td>
                 </tr>
               </TableSynthetic>
