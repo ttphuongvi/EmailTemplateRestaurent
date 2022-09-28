@@ -7,8 +7,9 @@ const AtomSubTitle = ({ children, dark }) => {
   return (
     <h2
       style={{
-        fontSize: theme.typography.subtitle2.fontSize,
-        fontFamily: theme.typography.subtitle2.fontFamily,
+        fontFamily: "'Playfair Display', serif",
+        fontSize: theme.spacing(2.5),
+        fontWeight: 700,
         color: theme.palette.common.black,
         marginTop: 0,
       }}

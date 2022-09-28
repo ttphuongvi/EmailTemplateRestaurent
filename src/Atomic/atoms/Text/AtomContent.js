@@ -7,10 +7,10 @@ const AtomContent = ({ dark, children }) => {
   return (
     <p
       style={{
-        fontFamily: theme.typography.body1.fontFamily,
-        fontWeight: theme.typography.body1.fontWeight,
-        fontSize: theme.typography.body1.fontSize,
-        lineHeight: theme.typography.body1.lineHeight,
+        fontFamily: "'Montserrat', sans-serif",
+        fontWeight: 400,
+        fontSize: theme.spacing(1.875),
+        lineHeight: 1.8,
         color:
           dark === true
             ? alpha(theme.palette.common.white, 0.8)

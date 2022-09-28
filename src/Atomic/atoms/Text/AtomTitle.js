@@ -7,8 +7,10 @@ const AtomTitle = ({ children, dark }) => {
   return (
     <h2
       style={{
-        fontSize: theme.typography.subtitle1.fontSize,
-        fontFamily: theme.typography.subtitle1.fontFamily,
+        fontFamily: "'Playfair Display', serif",
+        fontSize: theme.spacing(3.5),
+        fontWeight: 700,
+        lineHeight: 1.4,
         color:
           dark === true
             ? theme.palette.common.white

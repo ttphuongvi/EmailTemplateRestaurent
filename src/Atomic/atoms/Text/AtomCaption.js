@@ -7,12 +7,14 @@ const Caption = ({ dark, children }) => {
   return (
     <span
       style={{
-        fontFamily: theme.typography.caption.fontFamily,
-        fontSize: theme.typography.caption.fontSize,
-        letterSpacing: theme.typography.caption.letterSpacing,
-        textTransform: theme.typography.caption.textTransform,
-        paddingBottom: theme.typography.caption.paddingBottom,
-        borderBottom: theme.typography.caption.borderBottom,
+        fontFamily: "'Montserrat', sans-serif",
+        fontSize: theme.spacing(1.625),
+        letterSpacing: theme.spacing(0.4),
+        textTransform: "uppercase",
+        paddingBottom: theme.spacing(1.5),
+        borderBottom: `${theme.spacing(0.375)} solid ${
+          theme.palette.primary.main
+        }`,
         color:
           dark === true
             ? alpha(theme.palette.common.white, 0.4)

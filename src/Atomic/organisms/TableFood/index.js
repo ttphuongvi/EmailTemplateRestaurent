@@ -9,36 +9,34 @@ const TableFood = ({ caption, image, title, content, id, reverse }) => {
   const theme = useTheme();
 
   return (
-    <tr>
-      <td
-        style={{
-          backgroundColor: theme.palette.grey[50],
-        }}
-        id={id}
-      >
-        <TableSynthetic>
-          <tr
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              flexDirection: reverse === true ? "row-reverse" : "row",
-            }}
-          >
-            <td width="50%">
-              <TableFoodContent
-                caption={caption}
-                title={title}
-                content={content}
-                action="Read more"
-              />
-            </td>
-            <td width="50%">
-              <TableFoodImage image={image} />
-            </td>
-          </tr>
-        </TableSynthetic>
-      </td>
-    </tr>
+    <td
+      style={{
+        backgroundColor: theme.palette.grey[50],
+      }}
+      id={id}
+    >
+      <TableSynthetic>
+        <tr
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            flexDirection: reverse === true ? "row-reverse" : "row",
+          }}
+        >
+          <td width="50%">
+            <TableFoodContent
+              caption={caption}
+              title={title}
+              content={content}
+              action="Read more"
+            />
+          </td>
+          <td width="50%">
+            <TableFoodImage image={image} />
+          </td>
+        </tr>
+      </TableSynthetic>
+    </td>
   );
 };
 TableFood.propTypes = {
