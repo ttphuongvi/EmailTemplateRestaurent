@@ -23,10 +23,7 @@ const WatchOurVideo = () => {
             <TableSynthetic>
               <tr>
                 <td>
-                  <img
-                    src={IMAGE_WATCH_OUR_VIDEO}
-                    style={{ width: "100%" }}
-                  ></img>
+                  <img src={IMAGE_WATCH_OUR_VIDEO} width="100%"></img>
                 </td>
               </tr>
             </TableSynthetic>
@@ -37,7 +34,7 @@ const WatchOurVideo = () => {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                marginTop: "-25px",
+                marginTop: theme.spacing(-3.125),
               }}
             >
               <a
@@ -46,13 +43,13 @@ const WatchOurVideo = () => {
                   position: "absolute",
                   top: 0,
                   left: "50%",
-                  marginLeft: "-25px",
-                  width: "60px",
+                  marginLeft: theme.spacing(-3.125),
+                  width: theme.spacing(7.5),
                 }}
               >
                 <img
                   src={IMAGE_WATCH_OUR_VIDEO_ICON}
-                  style={{ width: "60px" }}
+                  width={theme.spacing(7.5)}
                 ></img>
               </a>
             </div>

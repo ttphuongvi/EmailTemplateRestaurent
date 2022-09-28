@@ -20,7 +20,7 @@ const TableBlogFood = ({ image, dateSubmitted, subTitle, content }) => {
           <p
             style={{
               textTransform: "uppercase",
-              fontSize: "14px",
+              fontSize: theme.spacing(1.75),
               fontFamily: "'Montserrat', sans-serif",
               color: alpha(theme.palette.common.black, 0.4),
             }}

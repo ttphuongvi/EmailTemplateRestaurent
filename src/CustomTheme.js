@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, useTheme } from "@mui/material/styles";
 import { grey, yellow } from "@mui/material/colors";
-
+const theme = useTheme();
 const customTheme = createTheme({
   palette: {
     primary: {
@@ -10,28 +10,28 @@ const customTheme = createTheme({
   typography: {
     caption: {
       fontFamily: "'Montserrat', sans-serif",
-      fontSize: "13px",
-      letterSpacing: "2px",
+      fontSize: theme.spacing(1.625),
+      letterSpacing: theme.spacing(0.4),
       textTransform: "uppercase",
-      paddingBottom: "12px",
-      borderBottom: `3px solid ${yellow[800]}`,
+      paddingBottom: theme.spacing(1.5),
+      borderBottom: `${theme.spacing(0.375)} solid ${yellow[800]}`,
     },
     subtitle1: {
       fontFamily: "'Playfair Display', serif",
-      fontSize: "28px",
+      fontSize: theme.spacing(3.5),
       fontWeight: 700,
       lineHeight: 1.4,
     },
     subtitle2: {
       fontFamily: "'Playfair Display', serif",
-      fontSize: "20px",
+      fontSize: theme.spacing(2.5),
       fontWeight: 700,
     },
 
     body1: {
       fontFamily: "'Montserrat', sans-serif",
       fontWeight: 400,
-      fontSize: "15px",
+      fontSize: theme.spacing(1.875),
       lineHeight: 1.8,
     },
   },

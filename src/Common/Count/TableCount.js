@@ -13,7 +13,7 @@ const TableCount = ({ number, name }) => {
             style={{
               display: "block",
               color: theme.palette.common.white,
-              fontSize: "34px",
+              fontSize: theme.spacing(4.25),
               fontFamily: "'Montserrat', sans-serif",
               fontWeight: 700,
             }}
@@ -24,7 +24,7 @@ const TableCount = ({ number, name }) => {
             style={{
               display: "block",
               color: alpha(theme.palette.common.white, 0.9),
-              fontSize: "13px",
+              fontSize: theme.spacing(1.625),
               fontFamily: "'Montserrat', sans-serif",
             }}
           >

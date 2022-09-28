@@ -51,7 +51,11 @@ const Blog = () => {
             const key = index;
 
             return (
-              <td key={key} width="50%" style={{ paddingTop: "20px" }}>
+              <td
+                key={key}
+                width="50%"
+                style={{ paddingTop: theme.spacing(2.5) }}
+              >
                 <TableBlogFood
                   image={item.image}
                   dateSubmitted={item.dateSubmitted}

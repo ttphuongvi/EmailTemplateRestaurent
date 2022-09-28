@@ -1,7 +1,7 @@
 import React from "react";
 import { alpha, useTheme } from "@mui/material/styles";
 import TableSynthetic from "../../Atomic/molecules/TableSynthetic";
-import TableFooterInfo from "../../Atomic/molecules/TableFooterInfo";
+import TableFooterInfo from "./TableFooterInfo";
 import AtomContent from "../../Atomic/atoms/Text/AtomContent";
 
 const FooterInfo = () => {

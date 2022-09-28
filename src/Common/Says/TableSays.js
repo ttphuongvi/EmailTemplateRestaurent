@@ -14,7 +14,7 @@ const TableSays = ({ image, name, job, content }) => {
           <img
             alt=""
             src={image}
-            width="100px"
+            width={theme.spacing(12.5)}
             style={{
               borderRadius: "50%",
               marginBottom: theme.spacing(2),

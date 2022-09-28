@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TableSynthetic from "../molecules/TableSynthetic";
+import { useTheme } from "@mui/material/styles";
 
 const TemplateEmail = ({ content }) => {
+  const theme = useTheme();
   return (
     <TableSynthetic
       style={{
-        maxWidth: "600px",
+        maxWidth: theme.spacing(75),
         margin: "0 auto",
       }}
     >

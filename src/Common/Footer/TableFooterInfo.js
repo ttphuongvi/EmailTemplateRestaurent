@@ -1,5 +1,5 @@
 import React from "react";
-import TableSynthetic from "../TableSynthetic";
+import TableSynthetic from "../../Atomic/molecules/TableSynthetic";
 import { useTheme } from "@mui/material/styles";
 import { PropTypes } from "prop-types";
 
@@ -12,7 +12,7 @@ const TableFooterInfo = ({ heading, content }) => {
           <h3
             style={{
               color: theme.palette.common.white,
-              fontSize: "20px",
+              fontSize: theme.spacing(2.5),
               marginTop: 0,
             }}
           >

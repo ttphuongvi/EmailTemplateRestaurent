@@ -12,7 +12,7 @@ const TableContentServices = ({ image, subTitle, content }) => {
     <TableSynthetic>
       <tr>
         <td align="center">
-          <img alt={subTitle} src={image} style={{ width: "60px" }}></img>
+          <img width={theme.spacing(7.5)} alt={subTitle} src={image}></img>
         </td>
       </tr>
       <tr>

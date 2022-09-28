@@ -1,11 +1,16 @@
+import { useTheme } from "@mui/material/styles";
 import React from "react";
 
 const Header = () => {
+  const theme = useTheme();
   return (
-    <td align="center" style={{ background: "#fff", padding: "15px" }}>
+    <td
+      align="center"
+      style={{ background: "#fff", padding: theme.spacing(1.875) }}
+    >
       <h1
         style={{
-          fontSize: "20px",
+          fontSize: theme.spacing(2.5),
           textTransform: "uppercase",
           fontFamily: " 'Montserrat', sans-serif",
         }}

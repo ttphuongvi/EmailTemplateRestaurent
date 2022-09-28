@@ -17,7 +17,7 @@ const TakeOrders = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         width: "100%",
-        height: "400px",
+        height: theme.spacing(50),
         padding: theme.spacing(0, 5),
       }}
     >
