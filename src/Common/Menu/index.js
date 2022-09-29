@@ -29,14 +29,10 @@ const Menu = () => {
   return (
     <td align="center" style={{ padding: theme.spacing(5) }}>
       <HeadingSection
-        caption={<AtomCaption>MENU</AtomCaption>}
-        title={<AtomTitle>Our Delicious Food</AtomTitle>}
-        content={
-          <AtomContent>
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.{" "}
-          </AtomContent>
-        }
+        caption="MENU"
+        title="Our Delicious Food"
+        content="A small river named Duden flows by their place and supplies it with
+            the necessary regelialia."
       ></HeadingSection>
       <TableSynthetic>
         <tr>

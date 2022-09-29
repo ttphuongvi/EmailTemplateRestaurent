@@ -32,14 +32,10 @@ const Services = () => {
   return (
     <td align="center" style={{ padding: theme.spacing(5) }}>
       <HeadingSection
-        caption={<AtomCaption>Services</AtomCaption>}
-        title={<AtomTitle>Our Services</AtomTitle>}
-        content={
-          <AtomContent>
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </AtomContent>
-        }
+        caption="Services"
+        title="Our Services"
+        content=" A small river named Duden flows by their place and supplies it with
+            the necessary regelialia."
       ></HeadingSection>
       <TableSynthetic>
         <tr>

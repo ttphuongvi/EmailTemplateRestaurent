@@ -13,25 +13,17 @@ const TableFoodContent = ({ caption, title, content, action }) => {
     <TableSynthetic>
       <tr>
         <td style={{ padding: theme.spacing(4) }}>
-          <HeadingSection
-            caption={<AtomCaption>{caption}</AtomCaption>}
-            title={
-              <h2
-                style={{
-                  fontSize: theme.spacing(2.75),
-                  marginTop: theme.spacing(3),
-                }}
-              >
-                {title}
-              </h2>
-            }
-            content={
-              <>
-                <AtomContent>{content}</AtomContent>
-                <Button>{action}</Button>
-              </>
-            }
-          ></HeadingSection>
+          <AtomCaption>{caption}</AtomCaption>
+          <h2
+            style={{
+              fontSize: theme.spacing(2.75),
+              marginTop: theme.spacing(3),
+            }}
+          >
+            {title}
+          </h2>
+          <AtomContent>{content}</AtomContent>
+          <Button>{action}</Button>
         </td>
       </tr>
     </TableSynthetic>

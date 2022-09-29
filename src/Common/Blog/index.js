@@ -36,14 +36,11 @@ const Blog = () => {
       }}
     >
       <HeadingSection
-        caption={<AtomCaption>Blog</AtomCaption>}
-        title={<AtomTitle>Read Stories</AtomTitle>}
-        content={
-          <AtomContent>
+        caption="Blog"
+        title="Read Stories"
+        content="
             A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </AtomContent>
-        }
+            the necessary regelialia."
       />
       <TableSynthetic>
         <tr>

@@ -36,14 +36,10 @@ const Says = () => {
       }}
     >
       <HeadingSection
-        caption={<AtomCaption>Says</AtomCaption>}
-        title={<AtomTitle>Testimonial</AtomTitle>}
-        content={
-          <AtomContent>
-            A small river named Duden flows by their place and supplies it with
-            the necessary regelialia.
-          </AtomContent>
-        }
+        caption="Says"
+        title="Testimonial"
+        content="A small river named Duden flows by their place and supplies it with
+            the necessary regelialia."
       />
       <TableSynthetic>
         <tr>

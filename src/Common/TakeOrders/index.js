@@ -25,21 +25,14 @@ const TakeOrders = () => {
         <tr>
           <td align="center">
             <HeadingSection
-              title={
-                <AtomTitle dark>We Serve Healthy & Delicious Foods</AtomTitle>
-              }
-              content={
-                <>
-                  <ContentDark dark>
-                    A small river named Duden flows by their place and supplies
+              title="We Serve Healthy & Delicious Foods"
+              content="  A small river named Duden flows by their place and supplies
                     it with the necessary regelialia. It is a paradisematic
                     country, in which roasted parts of sentences fly into your
-                    mouth.
-                  </ContentDark>
-                  <Button>Get Your Order Here!</Button>
-                </>
-              }
+                    mouth."
+              dark
             ></HeadingSection>
+            <Button>Get Your Order Here!</Button>
           </td>
         </tr>
       </TableSynthetic>

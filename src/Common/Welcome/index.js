@@ -16,15 +16,12 @@ const Welcome = () => {
       }}
     >
       <HeadingSection
-        caption={<AtomCaption dark>Welcom</AtomCaption>}
-        title={<TitleDark dark>Welcome To RestoBar</TitleDark>}
-        content={
-          <ContentDark dark>
-            A small river named Duden flows by their place and supplies it with
+        caption="Welcome"
+        title="Welcome To RestoBar"
+        content=" A small river named Duden flows by their place and supplies it with
             the necessary regelialia. It is a paradisematic country, in which
-            roasted parts of sentences fly into your mouth.
-          </ContentDark>
-        }
+            roasted parts of sentences fly into your mouth."
+        dark
       ></HeadingSection>
     </td>
   );

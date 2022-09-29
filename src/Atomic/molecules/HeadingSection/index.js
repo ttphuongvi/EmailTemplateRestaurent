@@ -1,22 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
+import AtomCaption from "../../atoms/Text/AtomCaption";
+import AtomTitle from "../../atoms/Text/AtomTitle";
+import AtomContent from "../../atoms/Text/AtomContent";
 
-const HeadingSection = ({ caption, title, content }) => {
+const HeadingSection = ({ caption, title, content, dark }) => {
   return (
     <div>
-      {caption}
+      <AtomCaption dark={dark ? true : false}>{caption}</AtomCaption>
 
-      {title}
+      <AtomTitle dark={dark ? true : false}>{title}</AtomTitle>
 
-      {content}
+      <AtomContent dark={dark ? true : false}>{content}</AtomContent>
     </div>
   );
 };
 
 HeadingSection.prototype = {
-  caption: PropTypes.node,
-  title: PropTypes.node,
-  content: PropTypes.node,
+  caption: PropTypes.any,
+  title: PropTypes.any,
+  content: PropTypes.any,
+  dark: PropTypes.bool,
 };
 
 export default HeadingSection;
