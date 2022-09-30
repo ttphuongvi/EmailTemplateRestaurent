@@ -8,7 +8,7 @@ const Caption = ({ dark, children }) => {
     <span
       style={{
         fontFamily: "'Montserrat', sans-serif",
-        fontSize: theme.spacing(1.625),
+        fontSize: theme.typography.body2.fontSize,
         letterSpacing: theme.spacing(0.4),
         textTransform: "uppercase",
         paddingBottom: theme.spacing(1.5),

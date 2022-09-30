@@ -1,9 +1,11 @@
 import { useTheme } from "@mui/material/styles";
+import PropTypes from "prop-types";
 
-const Button = (props) => {
+const Button = ({ children }) => {
   const theme = useTheme();
   return (
     <a
+      target={"_blank"}
       href="#"
       style={{
         backgroundColor: theme.palette.primary.main,
@@ -13,8 +15,12 @@ const Button = (props) => {
         borderRadius: theme.spacing(2),
       }}
     >
-      {props.children}
+      {children}
     </a>
   );
 };
 export default Button;
+
+Button.propTypes = {
+  children: PropTypes.node,
+};

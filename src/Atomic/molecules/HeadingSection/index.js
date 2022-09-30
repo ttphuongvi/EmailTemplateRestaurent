@@ -15,12 +15,10 @@ const HeadingSection = ({ caption, title, content, dark }) => {
     </div>
   );
 };
-
+export default HeadingSection;
 HeadingSection.prototype = {
   caption: PropTypes.any,
   title: PropTypes.any,
   content: PropTypes.any,
   dark: PropTypes.bool,
 };
-
-export default HeadingSection;

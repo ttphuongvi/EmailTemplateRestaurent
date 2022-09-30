@@ -2,7 +2,7 @@ import React from "react";
 import { useTheme } from "@mui/material/styles";
 import PropTypes from "prop-types";
 
-const AtomSubTitle = ({ children, dark }) => {
+const AtomSubTitle = ({ children }) => {
   const theme = useTheme();
   return (
     <h2
@@ -22,6 +22,5 @@ const AtomSubTitle = ({ children, dark }) => {
 export default AtomSubTitle;
 
 AtomSubTitle.propTypes = {
-  dark: PropTypes.bool,
   children: PropTypes.node,
 };
