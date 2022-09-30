@@ -9,17 +9,16 @@ const TableCount = ({ number, name }) => {
     <TableSynthetic>
       <tr>
         <td align="center">
-          <span
+          <h1
             style={{
               display: "block",
               color: theme.palette.common.white,
-              fontSize: theme.spacing(4.25),
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 700,
+              fontFamily: theme.typography.fontFamily,
+              fontWeight: theme.typography.fontWeightBold,
             }}
           >
             {number}
-          </span>
+          </h1>
           <span
             style={{
               display: "block",

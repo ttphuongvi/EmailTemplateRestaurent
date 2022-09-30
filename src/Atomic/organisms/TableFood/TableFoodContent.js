@@ -16,7 +16,6 @@ const TableFoodContent = ({ caption, title, content, action }) => {
           <AtomCaption>{caption}</AtomCaption>
           <h2
             style={{
-              fontSize: theme.spacing(2.75),
               marginTop: theme.spacing(3),
             }}
           >

@@ -5,11 +5,10 @@ import PropTypes from "prop-types";
 const AtomTitle = ({ children, dark }) => {
   const theme = useTheme();
   return (
-    <h2
+    <h1
       style={{
-        fontFamily: "'Playfair Display', serif",
-        fontSize: theme.spacing(3.5),
-        fontWeight: 700,
+        fontFamily: theme.typography.h6.fontFamily,
+        fontWeight: theme.typography.fontWeightBold,
         lineHeight: 1.4,
         color:
           dark === true
@@ -18,7 +17,7 @@ const AtomTitle = ({ children, dark }) => {
       }}
     >
       {children}
-    </h2>
+    </h1>
   );
 };
 

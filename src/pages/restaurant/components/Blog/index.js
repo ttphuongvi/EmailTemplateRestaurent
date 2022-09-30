@@ -49,7 +49,7 @@ const Blog = () => {
               <td
                 key={key}
                 width="50%"
-                style={{ paddingTop: theme.spacing(2.5) }}
+                style={{ paddingTop: theme.spacing(2) }}
               >
                 <TableBlogFood
                   image={item.image}

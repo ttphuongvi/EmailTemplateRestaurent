@@ -33,7 +33,7 @@ const WatchOurVideo = () => {
                 left: 0,
                 right: 0,
                 bottom: 0,
-                marginTop: theme.spacing(-3.125),
+                marginTop: theme.spacing(-3),
               }}
             >
               <AtomLink
@@ -42,8 +42,7 @@ const WatchOurVideo = () => {
                   position: "absolute",
                   top: 0,
                   left: "50%",
-                  marginLeft: theme.spacing(-3.125),
-                  width: theme.spacing(7.5),
+                  marginLeft: theme.spacing(-3),
                 }}
               >
                 <img

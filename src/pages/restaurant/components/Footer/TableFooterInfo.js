@@ -9,15 +9,14 @@ const TableFooterInfo = ({ heading, content }) => {
     <TableSynthetic>
       <tr>
         <td align="left" style={{ paddingRight: theme.spacing(1) }}>
-          <h3
+          <h2
             style={{
               color: theme.palette.common.white,
-              fontSize: theme.spacing(2.5),
               marginTop: 0,
             }}
           >
             {heading}
-          </h3>
+          </h2>
           {content}
         </td>
       </tr>

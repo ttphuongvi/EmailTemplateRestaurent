@@ -7,9 +7,9 @@ const AtomContent = ({ dark, children }) => {
   return (
     <p
       style={{
-        fontFamily: "'Montserrat', sans-serif",
-        fontWeight: 400,
-        fontSize: theme.spacing(1.875),
+        fontFamily: theme.typography.fontFamily,
+        fontWeight: theme.typography.fontWeightRegular,
+        fontSize: theme.typography.body2.fontSize,
         lineHeight: 1.8,
         color:
           dark === true

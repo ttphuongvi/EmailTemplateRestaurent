@@ -7,5 +7,11 @@ const customTheme = createTheme({
       main: yellow[800],
     },
   },
+  typography: {
+    fontFamily: "'Montserrat', sans-serif",
+    h6: {
+      fontFamily: "'Playfair Display', serif",
+    },
+  },
 });
 export default customTheme;

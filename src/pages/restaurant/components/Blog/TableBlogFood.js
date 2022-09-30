@@ -20,18 +20,16 @@ const TableBlogFood = ({ image, dateSubmitted, subTitle, content }) => {
           <p
             style={{
               textTransform: "uppercase",
-              fontSize: theme.spacing(1.75),
-              fontFamily: "'Montserrat', sans-serif",
-              color: alpha(theme.palette.common.black, 0.4),
+              fontSize: theme.typography.body2.fontSize,
+              fontFamily: theme.typography.fontFamily,
+              color: theme.palette.grey[500],
             }}
           >
             {dateSubmitted}
           </p>
           <AtomSubTitle>{subTitle}</AtomSubTitle>
           <AtomContent>{content}</AtomContent>
-          <p>
-            <Button>Read more</Button>
-          </p>
+          <Button>Read more</Button>
         </td>
       </tr>
     </TableSynthetic>
