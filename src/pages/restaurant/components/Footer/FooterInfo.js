@@ -1,5 +1,5 @@
 import React from "react";
-import { alpha, useTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 import TableSynthetic from "../../../../Atomic/molecules/TableSynthetic";
 import TableFooterInfo from "./TableFooterInfo";
 import AtomContent from "../../../../Atomic/atoms/Text/AtomContent";
@@ -16,11 +16,7 @@ const FooterInfo = () => {
     >
       <TableSynthetic>
         <tr>
-          <td
-            width="33.333%"
-            valign="top"
-            style={{ paddingTop: theme.spacing(2) }}
-          >
+          <td width="30%" valign="top" style={{ paddingTop: theme.spacing(2) }}>
             <TableFooterInfo
               heading="RestoBar"
               content={
@@ -42,15 +38,12 @@ const FooterInfo = () => {
               content={
                 <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
                   <li>
-                    <AtomLink href="#">
-                      <AtomContent dark>
-                        203 Fake St. Mountain View, San Francisco, California,
-                        USA
-                      </AtomContent>
-                    </AtomLink>
+                    <AtomContent dark>
+                      203 Fake St. Mountain View, San Francisco, California, USA
+                    </AtomContent>
                   </li>
                   <li>
-                    <AtomLink href="#">
+                    <AtomLink href="tel:3923929210">
                       <AtomContent dark> +2 392 3929 210</AtomContent>
                     </AtomLink>
                   </li>
